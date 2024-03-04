@@ -1,5 +1,32 @@
-activating the configuration...
-setting up /etc...
-reloading user units for ilian...
-restarting sysinit-reactivation.target
-iles/nixos' is dirty
+warning: Git tree '/home/ilian/dotfiles/nixos' is dirty
+building the system configuration...
+warning: Git tree '/home/ilian/dotfiles/nixos' is dirty
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/lwyjz70qh12nq6cb7fixl85vryzxqm3c-source/lib/attrsets.nix:957:11:
+
+          956|         || pred here (elemAt values 1) (head values) then
+          957|           head values
+             |           ^
+          958|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/lwyjz70qh12nq6cb7fixl85vryzxqm3c-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: attribute 'useGlobalPkgs' missing
+
+       at /nix/store/5d68p46j3nkqm6n7800p7r141hzqr3iy-source/nixos/hosts/default/ilian.nix:40:5:
+
+           39|     pkgs.thefuck
+           40|     pkgs.home-manager.useGlobalPkgs
+             |     ^
+           41|
