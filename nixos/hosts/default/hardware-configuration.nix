@@ -42,6 +42,9 @@
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
+  #CPU Power save
+  services.tlp.enable = true;
+
   #fuck you NVIDIA
 
   hardware.opengl = {
