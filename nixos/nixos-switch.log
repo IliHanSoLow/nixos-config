@@ -1,32 +1,20 @@
-warning: Git tree '/home/ilian/dotfiles/nixos' is dirty
-building the system configuration...
-warning: Git tree '/home/ilian/dotfiles/nixos' is dirty
-error:
-       … while calling the 'head' builtin
-
-         at /nix/store/lwyjz70qh12nq6cb7fixl85vryzxqm3c-source/lib/attrsets.nix:957:11:
-
-          956|         || pred here (elemAt values 1) (head values) then
-          957|           head values
-             |           ^
-          958|         else
-
-       … while evaluating the attribute 'value'
-
-         at /nix/store/lwyjz70qh12nq6cb7fixl85vryzxqm3c-source/lib/modules.nix:809:9:
-
-          808|     in warnDeprecation opt //
-          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
-             |         ^
-          810|         inherit (res.defsFinal') highestPrio;
-
-       (stack trace truncated; use '--show-trace' to show the full trace)
-
-       error: attribute 'useGlobalPkgs' missing
-
-       at /nix/store/5d68p46j3nkqm6n7800p7r141hzqr3iy-source/nixos/hosts/default/ilian.nix:40:5:
-
-           39|     pkgs.thefuck
-           40|     pkgs.home-manager.useGlobalPkgs
-             |     ^
-           41|
+stopping the following units: accounts-daemon.service
+activating the configuration...
+setting up /etc...
+reloading user units for ilian...
+restarting sysinit-reactivation.target
+reloading the following units: dbus.service
+restarting the following units: home-manager-ilian.service, polkit.service
+starting the following units: accounts-daemon.service
+51b54l-home-manager-generation.drv
+  /nix/store/h90ra4hm1isrj33sb3fvq5rffa8c1zr6-unit-home-manager-ilian.service.drv
+  /nix/store/ss2kij2vi8fkl94w7pz7zsw9zvqk7sj8-system-units.drv
+  /nix/store/b14985vx8q6776sp4g33b72dj5715znb-etc.drv
+  /nix/store/rgbd3kdql647pg5hz4c5yl1mmyac4i8h-nixos-system-legionOfNix-24.05.20240229.1536926.drv
+building '/nix/store/pp7zfc91j5pka1jq0pzrrr0wlhffy14s-home-manager-path.drv'...
+building '/nix/store/21y233k95im1wk1waaqr3wagk3jnh7rd-activation-script.drv'...
+building '/nix/store/jjnj1ha4i84chyxhwvkyd5hqjg51b54l-home-manager-generation.drv'...
+building '/nix/store/h90ra4hm1isrj33sb3fvq5rffa8c1zr6-unit-home-manager-ilian.service.drv'...
+building '/nix/store/ss2kij2vi8fkl94w7pz7zsw9zvqk7sj8-system-units.drv'...
+building '/nix/store/b14985vx8q6776sp4g33b72dj5715znb-etc.drv'...
+building '/nix/store/rgbd3kdql647pg5hz4c5yl1mmyac4i8h-nixos-system-legionOfNix-24.05.20240229.1536926.drv'...
