@@ -1,0 +1,4 @@
+warning: Git tree '/home/ilian/dotfiles/nixos' is dirty
+building the system configuration...
+warning: Git tree '/home/ilian/dotfiles/nixos' is dirty
+error: interrupted by the user
