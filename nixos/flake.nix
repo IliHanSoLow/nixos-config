@@ -29,6 +29,7 @@
         inputs.home-manager.nixosModules.default
         #Lenovo Legion 5 15arh05h
         inputs.nixos-hardware.nixosModules.lenovo-legion-15arh05h
+        ./hosts/default/theme.nix
       ];
     };
   };

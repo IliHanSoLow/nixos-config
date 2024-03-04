@@ -19,6 +19,15 @@ in {
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.timeout = 4;
+  boot.initrd.enable = true;
+  boot.initrd.systemd.enable = true;
+  boot.plymouth = {
+    enable = true;
+    font = "${pkgs.jetbrains-mono}/share/fonts/truetype/JetBrainsMono-Regular.ttf";
+    themePackages = [pkgs.catppuccin-plymouth];
+    theme = "catppuccin-macchiato";
+  };
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -30,6 +39,7 @@ in {
   networking.networkmanager.enable = true;
 
   # Set your time zone.
+  time.hardwareClockInLocalTime = true;
   time.timeZone = "Europe/Berlin";
 
   # Select internationalisation properties.
@@ -76,6 +86,7 @@ in {
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+    wireplumber.enable = true;
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
 
@@ -138,9 +149,21 @@ in {
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.packageOverrides = pkgs: {
+    nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
+      inherit pkgs;
+    };
+  };
 
   # List packages installed in system profile. To search, run:
-  system.autoUpgrade.enable = true;
+  system.autoUpgrade = {
+    enable = true;
+    operation = "switch"; # If you don't want to apply updates immediately, only after rebooting, use `boot` option in this case
+    flake = "/etc/nixos";
+    flags = ["--update-input" "nixpkgs" "--update-input" "rust-overlay" "--commit-lock-file"];
+    dates = "weekly";
+    # channel = "https://nixos.org/channels/nixos-unstable";
+  };
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     firefox
@@ -184,6 +207,11 @@ in {
     lm_sensors
     swww
     rofi-wayland
+    nuspell
+    hyphen
+    hunspell
+    hunspellDicts.en_US
+    hunspellDicts.de_DE
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
@@ -210,9 +238,17 @@ in {
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-wlr];
 
+  fonts.packages = with pkgs; [
+    jetbrains-mono
+    nerd-font-patcher
+  ];
+
+  nix.settings.auto-optimise-store = true;
+  nix.optimise.automatic = true;
   nix.gc = {
     automatic = true;
     dates = "weekly";
+    options = "--delete-older-than 14d";
   };
 
   home-manager = {
@@ -224,4 +260,48 @@ in {
   };
 
   boot.kernelParams = ["quiet" "splash" "amdgpu.backlight=0"];
+
+  #CPU Power save
+  services.power-profiles-daemon.enable = false; #Disable GNOME PowerProfile
+  powerManagement.enable = true;
+  services.tlp.enable = true;
+
+  #fuck you NVIDIA
+
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
+  services.xserver.videoDrivers = ["nvidia"];
+  hardware.nvidia = {
+    # Modesetting is required.
+    modesetting.enable = true;
+
+    # Nvidia power management. Experimental, and can cause sleep/suspend to fail.
+    # Enable this if you have graphical corruption issues or application crashes after waking
+    # up from sleep. This fixes it by saving the entire VRAM memory to /tmp/ instead
+    # of just the bare essentials.
+    powerManagement.enable = false;
+
+    # Fine-grained power management. Turns off GPU when not in use.
+    # Experimental and only works on modern Nvidia GPUs (Turing or newer).
+    powerManagement.finegrained = false;
+
+    # Use the NVidia open source kernel module (not to be confused with the
+    # independent third-party "nouveau" open source driver).
+    # Support is limited to the Turing and later architectures. Full list of
+    # supported GPUs is at:
+    # https://github.com/NVIDIA/open-gpu-kernel-modules#compatible-gpus
+    # Only available from driver 515.43.04+
+    # Currently alpha-quality/buggy, so false is currently the recommended setting.
+    open = false;
+
+    # Enable the Nvidia settings menu,
+    # accessible via `nvidia-settings`.
+    nvidiaSettings = true;
+
+    # Optionally, you may need to select the appropriate driver version for your specific GPU.
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
+  };
 }
