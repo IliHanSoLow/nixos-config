@@ -207,6 +207,7 @@ in {
     lm_sensors
     swww
     rofi-wayland
+    pyprland
     nuspell
     hyphen
     hunspell
