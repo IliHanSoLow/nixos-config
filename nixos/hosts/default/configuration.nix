@@ -179,6 +179,7 @@ in {
     libnotify
     blueman
     lshw
+    waybar
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
@@ -192,8 +193,15 @@ in {
     };
     hyprland = {
       enable = true;
+      nvidiaPatches = true;
+      xwayland.enable = true;
       package = inputs.hyprland.packages.${pkgs.system}.hyprland;
     };
+  };
+
+  environment.sessionVariables = {
+    WL_NO_HARDWARE_CURSORS = "1";
+    NIXOS_OZONE_WL = "1";
   };
 
   nix.gc = {

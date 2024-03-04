@@ -1,25 +1,28 @@
-stopping the following units: systemd-tmpfiles-resetup.service
-NOT restarting the following changed units: display-manager.service
-activating the configuration...
-setting up /etc...
-reloading user units for ilian...
-restarting sysinit-reactivation.target
-reloading the following units: reload-systemd-vconsole-setup.service
-starting the following units: systemd-tmpfiles-resetup.service
-n08k70cpgs6hm5zndrx1y5qzg754-X-Restart-Triggers-systemd-tmpfiles-resetup.drv
-  /nix/store/3aj8hadvcpvkss3nchc3nl3055p91pkw-unit-systemd-tmpfiles-resetup.service.drv
-  /nix/store/rm3l0v10f0hi9s0gskvh4wk4vc0szvis-xserver.conf.drv
-  /nix/store/y489mgm6dc4bsaf6yjvd7w94wi6g1g3j-unit-display-manager.service.drv
-  /nix/store/92gsvrygyd9hnjjli4ivqv26mr3w42mb-system-units.drv
-  /nix/store/4xbccq0lvjfpvrp8pfgk19qgf8l22qx1-etc.drv
-  /nix/store/3swvbb132z0mx6myisqk72m2j8r8288k-nixos-system-legionOfNix-24.05.20240229.1536926.drv
-building '/nix/store/3w93nw5dkr11y5h5kwypxsmrr8ng1wbd-opengl-drivers.drv'...
-building '/nix/store/rm3l0v10f0hi9s0gskvh4wk4vc0szvis-xserver.conf.drv'...
-building '/nix/store/rnmy5b51pnqzyvaikr1fn8k90f7d6k80-nixos-tmpfiles.d.drv'...
-building '/nix/store/y489mgm6dc4bsaf6yjvd7w94wi6g1g3j-unit-display-manager.service.drv'...
-building '/nix/store/k4wxfqj0iaqp1sxsw5kgdkvc1hcp2a0p-tmpfiles.d.drv'...
-building '/nix/store/5qwpn08k70cpgs6hm5zndrx1y5qzg754-X-Restart-Triggers-systemd-tmpfiles-resetup.drv'...
-building '/nix/store/3aj8hadvcpvkss3nchc3nl3055p91pkw-unit-systemd-tmpfiles-resetup.service.drv'...
-building '/nix/store/92gsvrygyd9hnjjli4ivqv26mr3w42mb-system-units.drv'...
-building '/nix/store/4xbccq0lvjfpvrp8pfgk19qgf8l22qx1-etc.drv'...
-building '/nix/store/3swvbb132z0mx6myisqk72m2j8r8288k-nixos-system-legionOfNix-24.05.20240229.1536926.drv'...
+warning: Git tree '/home/ilian/dotfiles/nixos' is dirty
+building the system configuration...
+warning: Git tree '/home/ilian/dotfiles/nixos' is dirty
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/lwyjz70qh12nq6cb7fixl85vryzxqm3c-source/lib/attrsets.nix:957:11:
+
+          956|         || pred here (elemAt values 1) (head values) then
+          957|           head values
+             |           ^
+          958|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/lwyjz70qh12nq6cb7fixl85vryzxqm3c-source/lib/modules.nix:809:9:
+
+          808|     in warnDeprecation opt //
+          809|       { value = builtins.addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          810|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error:
+       Failed assertions:
+       - The option definition `programs.hyprland.nvidiaPatches' in `/nix/store/ykilw3ym7ad2aj6159kn1qsw3d1aisnv-source/nixos/hosts/default/configuration.nix' no longer has any effect; please remove it.
+       Nvidia patches are no longer needed
