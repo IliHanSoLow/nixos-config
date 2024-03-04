@@ -180,6 +180,7 @@ in {
     blueman
     lshw
     waybar
+    lm_sensors
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
