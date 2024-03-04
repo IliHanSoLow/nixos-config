@@ -10,6 +10,8 @@
     };
 
     hyprland.url = "github:hyprwm/Hyprland";
+
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
   outputs = {
@@ -25,6 +27,7 @@
       modules = [
         ./hosts/default/configuration.nix
         inputs.home-manager.nixosModules.default
+        # nixos-hardware.nixosModules.lenovo-legion-16achg6-hybrid
       ];
     };
   };
