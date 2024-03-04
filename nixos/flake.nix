@@ -27,7 +27,8 @@
       modules = [
         ./hosts/default/configuration.nix
         inputs.home-manager.nixosModules.default
-        # nixos-hardware.nixosModules.lenovo-legion-16achg6-hybrid
+        #Lenovo Legion 5 15arh05h
+        inputs.nixos-hardware.nixosModules.lenovo-legion-15ach6
       ];
     };
   };
