@@ -182,6 +182,8 @@ in {
     lshw
     waybar
     lm_sensors
+    swww
+    rofi-wayland
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
@@ -200,10 +202,13 @@ in {
     };
   };
 
+  #Hyprland
   environment.sessionVariables = {
     WL_NO_HARDWARE_CURSORS = "1";
     NIXOS_OZONE_WL = "1";
   };
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-gtk];
 
   nix.gc = {
     automatic = true;
