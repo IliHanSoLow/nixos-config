@@ -35,7 +35,7 @@
     pkgs.python3
     pkgs.go
     pkgs.nodejs_21
-    pkgs.webcord-vencord
+    pkgs.betterdiscordctl
     pkgs.thefuck
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
