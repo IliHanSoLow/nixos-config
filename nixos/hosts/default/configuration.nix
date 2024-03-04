@@ -176,6 +176,7 @@ in {
     dunst
     mako
     gnomeExtensions.gsnap
+    gnomeExtensions.gpu-profile-selector
     libnotify
     blueman
     lshw
