@@ -182,6 +182,7 @@ in {
     lshw
     waybar
     lm_sensors
+    unigine-superposition
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
