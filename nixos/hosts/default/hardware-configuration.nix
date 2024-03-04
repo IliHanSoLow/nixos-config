@@ -43,6 +43,8 @@
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
   #CPU Power save
+  services.power-profiles-daemon.enable = false; #Disable GNOME PowerProfile
+  powerManagement.enable = true;
   services.tlp.enable = true;
 
   #fuck you NVIDIA
