@@ -216,6 +216,7 @@ in {
     users = {
       "ilian" = import ./ilian.nix;
     };
+    useGlobalPkgs = true;
   };
 
   boot.kernelParams = ["quiet" "splash" "amdgpu.backlight=0"];
