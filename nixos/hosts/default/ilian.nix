@@ -44,6 +44,7 @@
     pkgs.jdk21
     pkgs.signal-desktop
     pkgs.whatsapp-for-linux
+    pkgs.gdb
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
