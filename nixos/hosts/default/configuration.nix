@@ -217,7 +217,6 @@ in {
     mpv
     amberol
     elisa
-    libsForQt5.vvave
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
