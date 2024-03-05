@@ -230,7 +230,6 @@ in {
     audacious
     lollypop
     tmux-sessionizer
-    nur.repos.mic92.hello-nur
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"

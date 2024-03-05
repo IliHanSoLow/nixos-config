@@ -45,6 +45,7 @@
     pkgs.signal-desktop
     pkgs.whatsapp-for-linux
     pkgs.gdb
+    pkgs.nur.repos.mic92.hello-nur
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
