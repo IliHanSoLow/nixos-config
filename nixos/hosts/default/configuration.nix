@@ -215,6 +215,8 @@ in {
     hunspellDicts.en_US
     hunspellDicts.de_DE
     mpv
+    amberol
+    elisa
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
