@@ -168,7 +168,8 @@ in {
     enable = true;
     operation = "switch"; # If you don't want to apply updates immediately, only after rebooting, use `boot` option in this case
     flake = "/etc/nixos";
-    flags = ["--update-input" "nixpkgs" "--update-input" "rust-overlay" "--commit-lock-file"];
+    # flags = ["--update-input" "nixpkgs" "--update-input" "rust-overlay" "--commit-lock-file"];
+    flags = ["--update-input" "nixpkgs" "--commit-lock-file"];
     dates = "weekly";
     # channel = "https://nixos.org/channels/nixos-unstable";
   };
@@ -227,6 +228,7 @@ in {
     audacious
     lollypop
     tmux-sessionizer
+    nur.repos.shamilton.xtreme-download-manager
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
