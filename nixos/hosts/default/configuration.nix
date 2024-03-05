@@ -219,6 +219,8 @@ in {
     gnome.gnome-settings-daemon
     audacious
     lollypop
+    ntfs3g
+    fuse
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
