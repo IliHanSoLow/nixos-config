@@ -1,14 +1,9 @@
 {pkgs, ...}: {
   # Select internationalisation properties.
-  services.xserver = {
-    layout = "us,ua,ru";
-    xkbOptions = "grp:alt_shift_toggle";
-  };
 
   i18n.supportedLocales = [
     "en_US.UTF-8/UTF-8"
-    "uk_UA.UTF-8/UTF-8"
-    "ru_RU.UTF-8/UTF-8"
+    "de_DE.UTF-8/UTF-8"
   ];
 
   i18n.defaultLocale = "en_US.UTF-8";
@@ -31,6 +26,6 @@
     hunspell
     hunspellDicts.en_US
     hunspellDicts.uk_UA
-    hunspellDicts.ru_RU
+    hunspellDicts.de_de
   ];
 }
