@@ -214,7 +214,7 @@ in {
     hunspell
     hunspellDicts.en_US
     hunspellDicts.de_DE
-    vlc
+    mpv
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
