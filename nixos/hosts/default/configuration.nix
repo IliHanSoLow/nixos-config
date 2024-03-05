@@ -215,7 +215,6 @@ in {
     hunspellDicts.en_US
     hunspellDicts.de_DE
     mpv
-    haruna
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
