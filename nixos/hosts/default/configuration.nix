@@ -22,11 +22,18 @@ in {
   boot.loader.timeout = 4;
   boot.initrd.enable = true;
   boot.initrd.systemd.enable = true;
+  boot.supportedFilesystems = ["ntfs"];
   boot.plymouth = {
     enable = true;
     font = "${pkgs.jetbrains-mono}/share/fonts/truetype/JetBrainsMono-Regular.ttf";
     themePackages = [pkgs.catppuccin-plymouth];
     theme = "catppuccin-macchiato";
+  };
+
+  fileSystems."/bigssd" = {
+    device = "/dev/nvme1n1p1";
+    fsType = "ntfs-3g";
+    options = ["rw" "uid=1000"];
   };
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -219,8 +226,6 @@ in {
     gnome.gnome-settings-daemon
     audacious
     lollypop
-    ntfs3g
-    fuse
     tmux-sessionizer
   ];
   nixpkgs.config.permittedInsecurePackages = [
