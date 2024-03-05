@@ -221,6 +221,7 @@ in {
     lollypop
     ntfs3g
     fuse
+    tmux-sessionizer
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
