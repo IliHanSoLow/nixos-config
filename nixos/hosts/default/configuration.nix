@@ -69,7 +69,7 @@ in {
     layout = "eu, de";
     variant = "";
   };
-  services.xserver.xkb.options = "caps:esc";
+  services.xserver.xkb.options = "caps:swapescape";
 
   # Configure console keymap
   console.keyMap = "us";
