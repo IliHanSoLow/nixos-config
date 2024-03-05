@@ -218,6 +218,7 @@ in {
     amberol
     elisa
     gnomeExtensions.appindicator
+    gnome.gnome-settings-daemon
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
