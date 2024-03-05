@@ -157,11 +157,13 @@ in {
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.packageOverrides = pkgs: {
+  /*
+     nixpkgs.config.packageOverrides = pkgs: {
     nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
       inherit pkgs;
     };
   };
+  */
 
   # List packages installed in system profile. To search, run:
   system.autoUpgrade = {
@@ -228,7 +230,7 @@ in {
     audacious
     lollypop
     tmux-sessionizer
-    nur.repos.shamilton.xtreme-download-manager
+    nur.repos.mic92.hello-nur
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"

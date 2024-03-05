@@ -12,11 +12,14 @@
     hyprland.url = "github:hyprwm/Hyprland";
 
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+
+    nur.url = "github:nix-community/NUR";
   };
 
   outputs = {
     self,
     nixpkgs,
+    nur,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -30,6 +33,15 @@
         #Lenovo Legion 5 15arh05h
         inputs.nixos-hardware.nixosModules.lenovo-legion-15arh05h
         ./hosts/default/theme.nix
+        {nixpkgs.overlays = [nur.overlay];}
+        ({pkgs, ...}: let
+          nur-no-pkgs = import nur {
+            nurpkgs = import nixpkgs {system = "x86_64-linux";};
+          };
+        in {
+          imports = [nur-no-pkgs.repos.iopq.modules.xraya];
+          services.xraya.enable = true;
+        })
       ];
     };
   };
