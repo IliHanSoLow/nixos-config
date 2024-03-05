@@ -215,10 +215,10 @@ in {
     hunspellDicts.en_US
     hunspellDicts.de_DE
     mpv
-    amberol
-    elisa
     gnomeExtensions.appindicator
     gnome.gnome-settings-daemon
+    audacious
+    lollypop
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
