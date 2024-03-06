@@ -230,6 +230,8 @@ in {
     audacious
     lollypop
     tmux-sessionizer
+    networkmanager
+    neovide
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
