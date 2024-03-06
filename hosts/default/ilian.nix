@@ -50,6 +50,7 @@
     pkgs.emote
     pkgs.winetricks
     pkgs.wineWowPackages.waylandFull
+    pkgs.gthumb
     # pkgs.nur.repos.mic92.hello-nur
 
     # # It is sometimes useful to fine-tune packages, for example, by applying

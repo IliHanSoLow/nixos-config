@@ -8,7 +8,6 @@
     octofetch
     htop
     bottom
-    btop
     kmon
 
     # vulkan-tools
