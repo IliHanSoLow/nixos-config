@@ -190,6 +190,7 @@ in {
     libgcc
     lld
     clang
+    clang-tools
     gnumake
     cmake
     tmux
@@ -232,6 +233,7 @@ in {
     tmux-sessionizer
     networkmanager
     neovide
+    peazip
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
