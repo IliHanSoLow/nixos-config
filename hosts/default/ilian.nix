@@ -48,6 +48,7 @@
     pkgs.protonvpn-gui
     pkgs.zapzap
     pkgs.figlet
+    pkgs.emote
     # pkgs.nur.repos.mic92.hello-nur
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
