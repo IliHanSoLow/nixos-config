@@ -43,13 +43,11 @@
     pkgs.zathura
     pkgs.jdk21
     pkgs.signal-desktop
-    pkgs.whatsapp-for-linux
     pkgs.gdb
     pkgs.protonvpn-gui
     pkgs.zapzap
     pkgs.figlet
     pkgs.emote
-    pkgs.wineWowPackages.stable
     pkgs.winetricks
     pkgs.wineWowPackages.waylandFull
     # pkgs.nur.repos.mic92.hello-nur
