@@ -154,6 +154,7 @@ in {
     packages = with pkgs; [
     ];
   };
+  nix.settings.trusted-users = ["root" "ilian"];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -231,7 +232,7 @@ in {
     audacious
     lollypop
     tmux-sessionizer
-    kdePackages.networkmanager-qt
+    networkmanagerapplet
     neovide
     peazip
   ];
