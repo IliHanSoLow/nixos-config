@@ -17,7 +17,7 @@ in {
   networking.hostName = hostname; # Define your hostname.
 
   # Bootloader.
-  boot.loader.grub.enable = true;
+  boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.timeout = 4;
   boot.initrd.enable = true;
