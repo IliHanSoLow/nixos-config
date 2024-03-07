@@ -231,7 +231,7 @@ in {
     audacious
     lollypop
     tmux-sessionizer
-    networkmanager
+    kdePackages.networkmanager-qt
     neovide
     peazip
   ];
