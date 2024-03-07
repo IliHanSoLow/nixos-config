@@ -150,7 +150,7 @@ in {
   users.users.ilian = {
     isNormalUser = true;
     description = "ilian";
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = ["networkmanager" "input" "wheel" "video" "audio" "tss"];
     packages = with pkgs; [
     ];
   };
