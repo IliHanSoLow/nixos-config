@@ -29,7 +29,6 @@
     pkgs.yazi
     pkgs.black
     pkgs.isort
-    pkgs.opam
     pkgs.prettierd
     pkgs.stylua
     pkgs.python3
