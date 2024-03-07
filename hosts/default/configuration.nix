@@ -17,18 +17,18 @@ in {
   networking.hostName = hostname; # Define your hostname.
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
+  boot.loader.grub.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.timeout = 4;
   boot.initrd.enable = true;
   boot.initrd.systemd.enable = true;
   boot.supportedFilesystems = ["ntfs"];
-  boot.plymouth = {
-    enable = true;
-    font = "${pkgs.jetbrains-mono}/share/fonts/truetype/JetBrainsMono-Regular.ttf";
-    themePackages = [pkgs.catppuccin-plymouth];
-    theme = "catppuccin-macchiato";
-  };
+  # boot.plymouth = {
+  #   enable = true;
+  #   font = "${pkgs.jetbrains-mono}/share/fonts/truetype/JetBrainsMono-Regular.ttf";
+  #   themePackages = [pkgs.catppuccin-plymouth];
+  #   theme = "catppuccin-macchiato";
+  # };
 
   fileSystems."/bigssd" = {
     device = "/dev/nvme1n1p1";
