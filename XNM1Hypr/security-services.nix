@@ -35,7 +35,9 @@
     updater.interval = "daily"; #man systemd.time
     updater.frequency = 12;
   };
-  programs.firejail = {
+
+  /*
+     programs.firejail = {
     enable = true;
     wrappedBinaries = {
       mpv = {
@@ -55,6 +57,7 @@
       };
     };
   };
+  */
 
   environment.systemPackages = with pkgs; [
     vulnix #scan command: vulnix --system
