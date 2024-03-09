@@ -184,7 +184,6 @@ in {
     thunderbird
     ed
     neovim
-    fish
     git
     gh
     btop
@@ -236,6 +235,7 @@ in {
     neovide
     peazip
     vivid
+    any-nix-shell
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
@@ -252,6 +252,7 @@ in {
       xwayland.enable = true;
       package = inputs.hyprland.packages.${pkgs.system}.hyprland;
     };
+    fish.enable = true;
   };
 
   #Hyprland
