@@ -236,6 +236,9 @@ in {
     peazip
     vivid
     any-nix-shell
+    file
+    pavucontrol
+    easyeffects
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
