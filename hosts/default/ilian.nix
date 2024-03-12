@@ -51,6 +51,8 @@
     pkgs.wineWowPackages.waylandFull
     pkgs.gthumb
     pkgs.cachix
+    pkgs.ventoy-full
+    pkgs.xournalpp
     # pkgs.nur.repos.mic92.hello-nur
 
     # # It is sometimes useful to fine-tune packages, for example, by applying

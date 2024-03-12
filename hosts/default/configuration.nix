@@ -33,7 +33,7 @@ in {
   fileSystems."/bigssd" = {
     device = "/dev/nvme1n1p1";
     fsType = "ntfs-3g";
-    options = ["rw" "uid=1000"];
+    options = ["rw" "uid=1000" "defaults" "noatime" "nofail"];
   };
 
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
