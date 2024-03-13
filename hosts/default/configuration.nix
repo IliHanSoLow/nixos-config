@@ -73,6 +73,17 @@ in {
   services.xserver.desktopManager.gnome.enable = true;
   # Awesome WM
   services.xserver = {
+    displayManager.gdm.session = [
+      {
+        manage = "desktop";
+        name = "awesomeSession";
+        start = ''
+          exec gnome-session --session=gnome-flashback-metacity
+          exec awesome
+        '';
+      }
+    ];
+
     windowManager.awesome = {
       enable = true;
       luaModules = with pkgs.luaPackages; [
