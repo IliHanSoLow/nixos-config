@@ -1,30 +1,7 @@
-warning: Git tree '/home/ilian/dotfiles/nixos' is dirty
-error:
-       … while calling the 'seq' builtin
-
-         at /nix/store/lwyjz70qh12nq6cb7fixl85vryzxqm3c-source/lib/modules.nix:322:18:
-
-          321|         options = checked options;
-          322|         config = checked (removeAttrs config [ "_module" ]);
-             |                  ^
-          323|         _module = checked (config._module);
-
-       … while evaluating a branch condition
-
-         at /nix/store/lwyjz70qh12nq6cb7fixl85vryzxqm3c-source/lib/modules.nix:261:9:
-
-          260|       checkUnmatched =
-          261|         if config._module.check && config._module.freeformType == null && merged.unmatchedDefns != [] then
-             |         ^
-          262|           let
-
-       (stack trace truncated; use '--show-trace' to show the full trace)
-
-       error: attribute 'displayManager' already defined at /nix/store/5j3v6ix39xlz1ggqv6bkgsfn7r1vq7i3-source/hosts/default/configuration.nix:76:5
-
-       at /nix/store/5j3v6ix39xlz1ggqv6bkgsfn7r1vq7i3-source/hosts/default/configuration.nix:71:3:
-
-           70|   # Enable the GNOME Desktop Environment.
-           71|   services.xserver.displayManager.gdm.enable = true;
-             |   ^
-           72|   services.xserver.displayManager.gdm.wayland = true;
+NOT restarting the following changed units: display-manager.service
+activating the configuration...
+setting up /etc...
+reloading user units for ilwarning: error(s) occurred while switching to the new configuration
+ing units: apparmor.service
+[0;1;31mJob for apparmor.service failed.[0m
+[0;1;31mSee "systemctl status apparmor.service" and "journalctl -xeu apparmor.service" for details.[0m
