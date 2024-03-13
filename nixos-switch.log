@@ -1,34 +1,5 @@
-warning: Git tree '/home/ilian/dotfiles/nixos' is dirty
-building the system configuration...
-warning: Git tree '/home/ilian/dotfiles/nixos' is dirty
-these 29 derivations will be built:
-  /nix/store/pz87sxdipm3p3wfv321a6phs5ahqzhz1-lua5.2-luadbi-mysql-0.7.2-1.drv
-  /nix/store/ng1rsmrgwkk9x34y0qrnmkcf50k58flj-xsession.drv
-  /nix/store/gwdjx9aj9zvaximpag36j3vffcivzilp-none+awesome-xsession.drv
-  /nix/store/bcgwv91jhvyv8z8pvrgwc8lg76qw94p0-desktops.drv
-  /nix/store/p1xb3s56l9sxc1dh57mclw6xd14ccbn8-system-path.drv
-  /nix/store/hc25zhrgshh8k4yc7h141i6a7rml8a07-set-environment.drv
-  /nix/store/64pp199yx1nz7hh7y2sa8ix9kv2i698d-etc-profile.drv
-  /nix/store/szb9djx0r46k38nbjmbdq7knqzwjcxvj-abstractions-bash.drv
-  /nix/store/3wv8978p14n1whi64xks6l850dmkli38-apparmor.d.drv
-  /nix/store/iv547434nw69phnaj80bhgb4p45gz4wl-dbus-1.drv
-  /nix/store/z09n9m0xmbw5s2986g8h2kbcx8bl45yc-X-Restart-Triggers-dbus.drv
-  /nix/store/s0wd1nir01d85nv00mqldb37c38j2ipv-unit-dbus.service.drv
-  /nix/store/6m8lnkjji0d6nf2smj3a9nni1j1y9f98-user-units.drv
-  /nix/store/8yyh62i42nb5q54zfp3kd6i6npkscazg-etc-fish-nixos-env-preinit.fish.drv
-  /nix/store/cjrk2ggfcik902p6kc2lrliaa92w0ai2-unit-display-manager.service.drv
-  /nix/store/crrq0wbyhrs16m0pac35g17q2vi7w5ac-unit-accounts-daemon.service.drv
-  /nix/store/gfrf9a623lvyvvkjd477j4lh78mkfx7x-X-Restart-Triggers-apparmor.drv
-  /nix/store/hsamkaxafkl9h951s0g4f2912cz8zsd9-unit-apparmor.service.drv
-  /nix/store/ny6bn743y8hp2qwdcklw1xg5b3wxly8x-unit-dbus.service.drv
-  /nix/store/w5hkc7xih7k10lqbz9qiv0xjsr5rk0bn-X-Restart-Triggers-polkit.drv
-  /nix/store/q06g8bmr1jmwh6kd119i1pphh4c6f8j0-unit-polkit.service.drv
-  /nix/store/l05sa1bbkhjpdpv2r322p3s5yi10pcr5-system-units.drv
-  /nix/store/wdzlnbg1jfz2phhh3b0qggf598a7sc8d-man-paths.drv
-  /nix/store/qsqnhgdkyz2b9fx8c4b9061ysr7fg31i-man-cache.drv
-  /nix/store/sjv9qkf2vvyz2fkds19fnhlz4k7z3894-etc-man_db.conf.drv
-  /nix/store/vkmywc3fydxdmayk3g44a41jz322hfwn-etc-pam-environment.drv
-  /nix/store/vn1038irmmnq0mj0ayz775a2z54xmiha-system_fish-completions.drv
-  /nix/store/6w84w7ywxara7vap1i9c6p1wy90girdk-etc.drv
-  /nix/store/yhyppyvh15rfglg081l7gqfw4hky5d6c-nixos-system-legionOfNix-24.05.20240229.1536926.drv
-error: interrupted by the user
+activating the configuration...
+setting up /etc...
+reloading user units for ilian...
+restarting sysinit-reactivation.target
+iles/nixos' is dirty

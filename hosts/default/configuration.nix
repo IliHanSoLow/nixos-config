@@ -77,7 +77,6 @@ in {
       enable = true;
       luaModules = with pkgs.luaPackages; [
         luarocks
-        luadbi-mysql
       ];
     };
   };
@@ -251,6 +250,7 @@ in {
     pamixer
     easyeffects
     qjackctl
+    luajitPackages.luadbi
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
