@@ -71,6 +71,16 @@ in {
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.displayManager.gdm.wayland = true;
   services.xserver.desktopManager.gnome.enable = true;
+  # Awesome WM
+  services.xserver = {
+    windowManager.awesome = {
+      enable = true;
+      luaModules = with pkgs.luaPackages; [
+        luarocks
+        luadbi-mysql
+      ];
+    };
+  };
 
   # Configure keymap in X11
   services.xserver.xkb = {
