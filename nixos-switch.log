@@ -5,3 +5,4 @@ reloading user units for ilwarning: error(s) occurred while switching to the new
 ing units: apparmor.service
 [0;1;31mJob for apparmor.service failed.[0m
 [0;1;31mSee "systemctl status apparmor.service" and "journalctl -xeu apparmor.service" for details.[0m
+the following new units were started: sysinit-reactivation.target, systemd-tmpfiles-resetup.service

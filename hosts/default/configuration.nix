@@ -73,16 +73,6 @@ in {
       enable = true;
       wayland = true;
     };
-    session = [
-      {
-        manage = "desktop";
-        name = "awesomeSession";
-        start = ''
-          exec gnome-session --session=gnome-flashback-metacity
-          exec awesome
-        '';
-      }
-    ];
   };
   services.xserver.desktopManager.gnome.enable = true;
   # Awesome WM
