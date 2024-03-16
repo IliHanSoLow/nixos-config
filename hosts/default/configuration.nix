@@ -253,6 +253,16 @@ in {
     easyeffects
     qjackctl
     luajitPackages.luadbi
+    acpid
+    fortune
+    redshift
+    mpd
+    mpc-cli
+    mpc-qt
+    maim
+    feh
+    inotify-tools
+    xdotool
   ];
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
