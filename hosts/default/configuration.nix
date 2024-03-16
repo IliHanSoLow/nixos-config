@@ -243,6 +243,7 @@ in {
     lollypop
     tmux-sessionizer
     networkmanagerapplet
+    networkmanager_dmenu
     neovide
     peazip
     vivid
