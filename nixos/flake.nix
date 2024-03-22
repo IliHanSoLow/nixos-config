@@ -70,7 +70,7 @@
         ./../XNM1Hypr/fonts.nix
         ./../XNM1Hypr/security-services.nix
         ./../XNM1Hypr/services.nix
-        # ./../XNM1Hypr/printing.nix
+        ./../XNM1Hypr/printing.nix
         # ./../XNM1Hypr/gnome.nix
         ./../XNM1Hypr/hyprland.nix
         ./../XNM1Hypr/environment-variables.nix
