@@ -201,7 +201,6 @@ in {
     btop
     libgcc
     lld
-    clang
     clang-tools
     gnumake
     cmake

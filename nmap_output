@@ -1,0 +1,16 @@
+# Nmap 7.94 scan initiated Sat Mar 16 12:23:49 2024 as: nmap -sn -oG nmap_output 192.168.178.0/24
+Host: 192.168.178.1 (fritz.box)	Status: Up
+Host: 192.168.178.20 (legionOfNix.fritz.box)	Status: Up
+Host: 192.168.178.22 (Wohnzimmer-2.fritz.box)	Status: Up
+Host: 192.168.178.34 (Arbeitszimmer.fritz.box)	Status: Up
+Host: 192.168.178.38 (6b998519-0ede-c349-298e-33668e61b2da.fritz.box)	Status: Up
+Host: 192.168.178.45 (Heimkino.fritz.box)	Status: Up
+Host: 192.168.178.55 ()	Status: Up
+Host: 192.168.178.58 (TL-SG108PE.fritz.box)	Status: Up
+Host: 192.168.178.65 (TL-GWK.fritz.box)	Status: Up
+Host: 192.168.178.68 (anonphone.fritz.box)	Status: Up
+Host: 192.168.178.74 (HF-LPT230.fritz.box)	Status: Up
+Host: 192.168.178.96 (NOD-WAP.fritz.box)	Status: Up
+Host: 192.168.178.101 (HF-LPT230.fritz.box)	Status: Up
+Host: 192.168.178.124 (5011KHCA234W0335.fritz.box)	Status: Up
+# Nmap done at Sat Mar 16 12:23:52 2024 -- 256 IP addresses (14 hosts up) scanned in 3.33 seconds
