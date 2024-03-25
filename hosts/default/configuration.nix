@@ -95,6 +95,7 @@ in {
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+  services.printing.drivers = [pkgs.gutenprint];
 
   # Enable sound with pipewire.
   sound.enable = true;
@@ -201,6 +202,7 @@ in {
     btop
     libgcc
     lld
+    clang
     clang-tools
     gnumake
     cmake

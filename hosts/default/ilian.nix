@@ -113,6 +113,14 @@
   home.sessionVariables = {
     # EDITOR = "emacs";
   };
+  services = {
+    gammastep = {
+      enable = true;
+      provider = "manual";
+      latitude = 49.35202;
+      longitude = 11.31154;
+    };
+  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

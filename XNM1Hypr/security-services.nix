@@ -25,7 +25,7 @@
       apparmor-profiles
     ];
   };
-  services.fail2ban.enable = true;
+  # services.fail2ban.enable = true; #Disabled cause doesnt work with firewall
   security.pam.services.swaylock = {};
   # security.polkit.enable = true;
   programs.browserpass.enable = true;
