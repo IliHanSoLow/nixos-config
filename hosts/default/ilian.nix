@@ -64,7 +64,6 @@
     pkgs.bear
     pkgs.libreoffice
     pkgs.libsForQt5.kdeconnect-kde
-    pkgs.rofi-emoji
     # pkgs.nur.repos.mic92.hello-nur
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
@@ -122,6 +121,12 @@
       longitude = 11.31154;
     };
   };
+  # programs = {
+  #   rofi = {
+  #     enable = true;
+  #     plugins = [pkgs.rofi-emoji];
+  #   };
+  # };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
