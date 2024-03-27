@@ -246,6 +246,7 @@ in {
     tmux-sessionizer
     networkmanagerapplet
     networkmanager_dmenu
+    dmenu-bluetooth
     neovide
     peazip
     vivid
