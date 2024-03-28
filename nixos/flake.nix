@@ -91,6 +91,7 @@
         ./../XNM1Hypr/utils.nix
         ./../XNM1Hypr/terminal-utils.nix
         # ./../XNM1Hypr/work.nix
+        ./../hosts/default/vm.nix
 
         inputs.home-manager.nixosModules.default
         inputs.nixos-hardware.nixosModules.lenovo-legion-15arh05h

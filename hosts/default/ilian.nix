@@ -64,7 +64,7 @@
     pkgs.bear
     pkgs.libreoffice
     pkgs.libsForQt5.kdeconnect-kde
-    pkgs.virt-manager
+
     # pkgs.nur.repos.mic92.hello-nur
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
