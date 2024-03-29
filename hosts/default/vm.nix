@@ -19,6 +19,8 @@
     win-virtio
     win-spice
     gnome.adwaita-icon-theme
+    qemu
+    qemu_kvm
   ];
 
   # Manage the virtualisation services
