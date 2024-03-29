@@ -268,6 +268,7 @@ in {
     inotify-tools
     xdotool
   ];
+
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
   ];
