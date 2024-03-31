@@ -273,7 +273,6 @@ in {
     "electron-25.9.0"
   ];
 
-  # Set neovim as default Text Editor
   programs = {
     neovim = {
       enable = true;
