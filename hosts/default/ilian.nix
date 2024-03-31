@@ -143,11 +143,13 @@
     # Optional
     # Whether to enable hyprland-session.target on hyprland startup
     systemd.enable = true;
+
     /*
        plugins = [
-      inputs.hy3.packages.${pkgs.system}.default
+      inputs.hy3.packages.x86_64-linux.hy3
     ];
     */
+
     extraConfig = builtins.readFile ./../../hypr/hyprland.conf;
   };
 }
