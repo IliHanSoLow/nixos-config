@@ -6,7 +6,7 @@ plugins = [
 ]
 
 [scratchpads.term]
-command = "kitty"
+command = "kitty --class kitty-dropterm"
 animation = "fromTop"
 unfocus = "hide"
 excludes = "*"
