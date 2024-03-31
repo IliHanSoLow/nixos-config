@@ -132,8 +132,7 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  /*
-     wayland.windowManager.hyprland = {
+  wayland.windowManager.hyprland = {
     # Whether to enable Hyprland wayland compositor
     enable = true;
     # The hyprland package to use
@@ -144,6 +143,11 @@
     # Optional
     # Whether to enable hyprland-session.target on hyprland startup
     systemd.enable = true;
+    /*
+       plugins = [
+      inputs.hy3.packages.${pkgs.system}.default
+    ];
+    */
+    extraConfig = builtins.readFile ./../../hypr/hyprland.conf;
   };
-  */
 }
