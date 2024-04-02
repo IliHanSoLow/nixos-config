@@ -179,7 +179,8 @@ in {
   };
   */
 
-  # List packages installed in system profile. To search, run:
+  /*
+     # List packages installed in system profile. To search, run:
   system.autoUpgrade = {
     enable = true;
     operation = "switch"; # If you don't want to apply updates immediately, only after rebooting, use `boot` option in this case
@@ -189,6 +190,7 @@ in {
     dates = "weekly";
     # channel = "https://nixos.org/channels/nixos-unstable";
   };
+  */
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     firefox
@@ -248,7 +250,7 @@ in {
     networkmanager_dmenu
     dmenu-bluetooth
     neovide
-    peazip
+    # peazip
     vivid
     any-nix-shell
     file
