@@ -8,6 +8,8 @@ plugins = [
 [scratchpads.term]
 command = "kitty --class kitty-dropterm"
 animation = "fromTop"
+class = "kitty-dropterm"
+size = "70% 40%"
 unfocus = "hide"
 excludes = "*"
 lazy = true
