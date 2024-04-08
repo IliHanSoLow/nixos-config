@@ -64,6 +64,7 @@
     pkgs.bear
     pkgs.libreoffice
     pkgs.libsForQt5.kdeconnect-kde
+    pkgs.anki
 
     # pkgs.nur.repos.mic92.hello-nur
 
