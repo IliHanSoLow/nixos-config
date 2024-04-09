@@ -65,6 +65,8 @@
     pkgs.libreoffice
     pkgs.libsForQt5.kdeconnect-kde
     pkgs.anki
+    pkgs.lutris
+    pkgs.gzdoom
 
     # pkgs.nur.repos.mic92.hello-nur
 
