@@ -10,7 +10,7 @@
 # As I hope was clear from the video, I am new to nixos, and there may be other, better, options, in which case I'd love to know them! (I'll update the gist if so)
 
 # A rebuild script that commits on a successful build
-set -e
+# set -e
 
 # cd to your config dir
 pushd ~/dotfiles/nixos/
