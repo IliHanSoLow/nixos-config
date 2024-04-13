@@ -67,6 +67,12 @@
     pkgs.anki
     pkgs.lutris
     pkgs.gzdoom
+    pkgs.gimp
+    pkgs.vulkan-tools
+    pkgs.media-downloader
+    pkgs.tartube
+    pkgs.yt-dlp
+    pkgs.ffmpeg
 
     # pkgs.nur.repos.mic92.hello-nur
 

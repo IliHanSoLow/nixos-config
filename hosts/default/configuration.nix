@@ -31,7 +31,7 @@ in {
   # };
 
   fileSystems."/bigssd" = {
-    device = "/dev/nvme1n1p1";
+    device = "/dev/disk/by-uuid/45A559107907CDBE";
     fsType = "ntfs-3g";
     options = ["rw" "uid=1000" "defaults" "noatime" "nofail"];
   };
