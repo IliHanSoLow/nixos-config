@@ -54,7 +54,10 @@
     pkgs.ventoy-full
     pkgs.xournalpp
     pkgs.steam
-    pkgs.ncmpcpp
+    (
+      pkgs.ncmpcpp.override
+      {visualizerSupport = true;}
+    )
     pkgs.cbonsai
     pkgs.nmap
     pkgs.typst
