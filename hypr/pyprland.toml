@@ -29,6 +29,7 @@ command = "kitty --class music -e ncmpcpp"
 animation = "fromLeft"
 class = "music"
 size = "40% 70%"
+position = "50% 5%"
 unfocus = "hide"
 excludes = "*"
 lazy = true
