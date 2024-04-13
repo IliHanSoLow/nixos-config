@@ -269,7 +269,6 @@ in {
     feh
     inotify-tools
     xdotool
-    home-manager
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
