@@ -78,6 +78,7 @@
     pkgs.ffmpeg
     pkgs.gradle
     pkgs.maven
+    pkgs.tree
 
     # pkgs.nur.repos.mic92.hello-nur
 
