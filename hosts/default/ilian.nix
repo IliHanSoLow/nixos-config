@@ -34,7 +34,6 @@
     pkgs.python3
     pkgs.go
     pkgs.nodejs_21
-    pkgs.webcord
     pkgs.thefuck
     pkgs.starship
     pkgs.zoxide
