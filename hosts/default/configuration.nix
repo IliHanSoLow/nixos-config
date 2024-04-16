@@ -269,6 +269,7 @@ in {
     feh
     inotify-tools
     xdotool
+    libsForQt5.qtstyleplugin-kvantum
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
@@ -292,7 +293,7 @@ in {
   environment.sessionVariables = {
     WL_NO_HARDWARE_CURSORS = "1";
     NIXOS_OZONE_WL = "1";
-    QT_QPA_PLATFORMTHEME = "qt5ct";
+    QT_STYLE_OVERRIDE = "kvantum";
   };
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-wlr];
