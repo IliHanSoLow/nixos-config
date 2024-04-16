@@ -5,7 +5,7 @@
   environment.variables.XCURSOR_SIZE = "24";
   qt.enable = true;
   qt.platformTheme = "qt5ct";
-  qt.style = "qt5ct";
+  qt.style = "gtk2";
   console = {
     earlySetup = true;
     colors = [
