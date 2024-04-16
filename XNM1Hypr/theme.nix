@@ -4,6 +4,7 @@
   environment.variables.XCURSOR_THEME = "Catppuccin-Macchiato-Teal";
   environment.variables.XCURSOR_SIZE = "24";
   qt.enable = true;
+  qt.platform = "wayland";
   qt.platformTheme = "qt5ct";
   qt.style = "gtk2";
   console = {
