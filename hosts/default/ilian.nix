@@ -78,7 +78,13 @@
     pkgs.gradle
     pkgs.maven
     pkgs.tree
-
+    (
+      pkgs.discord.override
+      {
+        withOpenASAR = true;
+        withTTS = true;
+      }
+    )
     # pkgs.nur.repos.mic92.hello-nur
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
