@@ -5,6 +5,7 @@
   config,
   pkgs,
   inputs,
+  lib,
   ...
 }: let
   hostname = "legionOfNix";
@@ -290,11 +291,12 @@ in {
   };
 
   #Hyprland
-  environment.sessionVariables = {
+  environment.sessionVariables = lib.mkForce {
     WL_NO_HARDWARE_CURSORS = "1";
     NIXOS_OZONE_WL = "1";
-    QT_STYLE_OVERRIDE = "kvantum";
+    QT_QPA_PLATFORMTHEME = "qt5ct";
   };
+
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [pkgs.xdg-desktop-portal-wlr];
 
