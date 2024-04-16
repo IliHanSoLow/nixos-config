@@ -12,7 +12,7 @@ with lib; let
 
   mkDefaultCursorFile = theme:
     pkgs.writeTextDir
-    "share/icons/default/index.theme"
+    "index.theme"
     "${indexThemeText theme}";
 
   defaultCursorPkg = mkDefaultCursorFile cfg.theme;
