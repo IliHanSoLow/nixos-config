@@ -271,6 +271,8 @@ in {
     inotify-tools
     xdotool
     libsForQt5.qtstyleplugin-kvantum
+    gtk2
+    gtk3
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
