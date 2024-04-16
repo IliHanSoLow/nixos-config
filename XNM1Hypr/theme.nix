@@ -4,8 +4,8 @@
   environment.variables.XCURSOR_THEME = "Catppuccin-Macchiato-Teal";
   environment.variables.XCURSOR_SIZE = "24";
   qt.enable = true;
-  qt.platformTheme = "gtk";
-  qt.style = "gtk";
+  qt.platformTheme = "qt5ct";
+  qt.style = "qt5ct";
   console = {
     earlySetup = true;
     colors = [
