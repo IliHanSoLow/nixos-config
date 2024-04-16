@@ -132,7 +132,7 @@
   #  /etc/profiles/per-user/ilian/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    QT_QPA_PLATFORMTHEME = "gtk2";
+    QT_QPA_PLATFORMTHEME = "qt5ct";
     # EDITOR = "emacs";
   };
   services = {
