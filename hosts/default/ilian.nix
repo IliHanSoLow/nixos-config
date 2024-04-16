@@ -76,6 +76,8 @@
     pkgs.tartube
     pkgs.yt-dlp
     pkgs.ffmpeg
+    pkgs.gradle
+    pkgs.maven
 
     # pkgs.nur.repos.mic92.hello-nur
 
