@@ -1,8 +1,8 @@
 {pkgs, ...}: {
   # Enable Theme
-  environment.variables.GTK_THEME = "Catppuccin-Macchiato-Standard-Teal-Dark";
-  environment.variables.XCURSOR_THEME = "Catppuccin-Macchiato-Teal";
-  environment.variables.XCURSOR_SIZE = "24";
+  environment.sessionVariables.GTK_THEME = "Catppuccin-Macchiato-Standard-Teal-Dark";
+  environment.sessionVariables.XCURSOR_THEME = "Catppuccin-Macchiato-Teal";
+  environment.sessionVariables.XCURSOR_SIZE = "24";
   qt.enable = true;
   qt.platformTheme = "qt5ct";
   qt.style = "gtk2";
