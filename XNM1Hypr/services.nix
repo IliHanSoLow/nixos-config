@@ -15,11 +15,7 @@
     xfce.xfconf
     gnome2.GConf
   ];
-  services.mpd = {
-    enable = true;
-    # musicDirectory = "/bigssd/Dokumente/dj";
-    extraConfig = builtins.readFile ./../config_files/mpd.conf;
-  };
+  # services.mpd.enable = true;
   programs.thunar.enable = true;
   services.tumbler.enable = true;
   services.fwupd.enable = true;
