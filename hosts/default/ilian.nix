@@ -2,6 +2,7 @@
   config,
   pkgs,
   inputs,
+  lib,
   ...
 }: {
   # Home Manager needs a bit of information about you and the paths it should
@@ -141,7 +142,7 @@
       provider = "manual";
       latitude = 49.35202;
       longitude = 11.31154;
-      settings.general = {
+      settings.general = lib.mkForce {
         temp-day = 6500;
         temp-night = 3700;
       };
