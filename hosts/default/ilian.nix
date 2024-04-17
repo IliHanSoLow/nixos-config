@@ -141,7 +141,10 @@
       provider = "manual";
       latitude = 49.35202;
       longitude = 11.31154;
-      temp-day = 6500;
+      settings.general = {
+        temp-day = 6500;
+        temp-night = 3700;
+      };
     };
   };
   # programs = {

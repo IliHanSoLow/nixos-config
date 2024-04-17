@@ -15,7 +15,10 @@
     xfce.xfconf
     gnome2.GConf
   ];
-  # services.mpd.enable = true;
+  services.mpd = {
+    enable = true;
+    isSystem = false;
+  };
   programs.thunar.enable = true;
   services.tumbler.enable = true;
   services.fwupd.enable = true;
