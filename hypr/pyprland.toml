@@ -33,3 +33,13 @@ position = "5% 15%"
 unfocus = "hide"
 excludes = "*"
 lazy = true
+
+
+[scratchpads.obsidian]
+command = "obsidian --class scratchpad"
+animation = "fromTop"
+class = "scratchpad"
+size = "70% 60%"
+unfocus = "hide"
+excludes = "*"
+lazy = true
