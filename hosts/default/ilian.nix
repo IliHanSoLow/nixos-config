@@ -141,6 +141,7 @@
       provider = "manual";
       latitude = 49.35202;
       longitude = 11.31154;
+      temp-day = 6500;
     };
   };
   # programs = {
