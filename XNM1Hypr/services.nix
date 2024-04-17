@@ -17,7 +17,6 @@
   ];
   services.mpd = {
     enable = true;
-    systemWide = false;
     # musicDirectory = "/bigssd/Dokumente/dj";
     extraConfig = builtins.readFile ./../config_files/mpd.conf;
   };
