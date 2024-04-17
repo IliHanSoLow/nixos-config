@@ -17,7 +17,9 @@
   ];
   services.mpd = {
     enable = true;
-    isSystem = false;
+    systemWide = false;
+    musicDirectory = "/bigssd/Dokumente/dj";
+    configurationFile = "~/.config/mpd/mpd.conf";
   };
   programs.thunar.enable = true;
   services.tumbler.enable = true;
