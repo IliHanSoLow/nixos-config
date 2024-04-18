@@ -51,8 +51,7 @@
     dunst
     avizo
     wlogout
-    (wpaperd.override
-      {rustPlatform.buildRustPackage.version = "1.0.1";})
+    wpaperd
     # swww
     gifsicle
   ];
