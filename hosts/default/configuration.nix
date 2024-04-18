@@ -272,6 +272,7 @@ in {
     xdotool
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5ct
+    openssl
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
