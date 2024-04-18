@@ -52,7 +52,7 @@
     avizo
     wlogout
     (wpaperd.override
-      {version = "1.0.1";})
+      {rustPlatform.buildRustPackage.version = "1.0.1";})
     # swww
     gifsicle
   ];
