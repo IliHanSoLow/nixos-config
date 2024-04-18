@@ -88,6 +88,7 @@
     )
     pkgs.sioyek
     pkgs.glava
+    pkgs.rawtherapee
     # pkgs.nur.repos.mic92.hello-nur
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
