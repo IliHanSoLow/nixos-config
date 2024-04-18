@@ -35,7 +35,6 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./../hosts/default/configuration.nix
-        ./../hosts/default/searxng.nix
         inputs.home-manager.nixosModules.default
         #Lenovo Legion 5 15arh05h
         inputs.nixos-hardware.nixosModules.lenovo-legion-15arh05h
@@ -99,7 +98,6 @@
         ./../hosts/default/vm.nix
         # ./../hosts/default/theme.nix
         ./../hosts/default/cursor_theme.nix
-        ./../hosts/default/searxng.nix
 
         inputs.home-manager.nixosModules.default
         inputs.nixos-hardware.nixosModules.lenovo-legion-15arh05h
