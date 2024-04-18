@@ -51,7 +51,8 @@
     dunst
     avizo
     wlogout
-    wpaperd
+    (wpaperd.override
+      {version = "1.0.1";})
     # swww
     gifsicle
   ];
