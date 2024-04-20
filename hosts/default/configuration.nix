@@ -273,6 +273,7 @@ in {
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5ct
     openssl
+    gtklp
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
