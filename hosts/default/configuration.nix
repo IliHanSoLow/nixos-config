@@ -193,6 +193,7 @@ in {
   };
   */
   # $ nix search wget
+  documentation.dev.enable = true;
   environment.systemPackages = with pkgs; [
     firefox
     brave
@@ -274,6 +275,8 @@ in {
     libsForQt5.qt5ct
     openssl
     gtklp
+    man-pages
+    man-pages-posix
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
