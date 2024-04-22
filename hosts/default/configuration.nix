@@ -277,6 +277,7 @@ in {
     gtklp
     man-pages
     man-pages-posix
+    moreutils
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
