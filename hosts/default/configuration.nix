@@ -277,7 +277,7 @@ in {
     gtklp
     man-pages
     man-pages-posix
-    moreutils
+    parallel
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
