@@ -51,7 +51,7 @@
     dunst
     avizo
     wlogout
-    wpaperd
+    # wpaperd
     # swww
     gifsicle
   ];
