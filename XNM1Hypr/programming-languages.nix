@@ -8,5 +8,7 @@
     zig
     numbat
     gnu-cobol
+    #gmp is for calculatin with cobal
+    gmp
   ];
 }
