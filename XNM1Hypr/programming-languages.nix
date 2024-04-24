@@ -7,5 +7,6 @@
     lua
     zig
     numbat
+    gnu-cobol
   ];
 }
