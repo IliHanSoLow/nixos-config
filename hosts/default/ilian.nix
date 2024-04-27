@@ -93,6 +93,8 @@
     pkgs.dfu-programmer
     pkgs.cutter
     pkgs.weechat
+    pkgs.gomuks
+    pkgs.element
     # pkgs.nur.repos.mic92.hello-nur
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
