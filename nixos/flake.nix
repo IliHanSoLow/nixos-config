@@ -20,6 +20,7 @@
       url = "github:outfoxxed/hy3";
       inputs.hyprland.follows = "hyprland";
     };
+    pwndbg.url = "github:pwndbg/pwndbg";
   };
 
   outputs = {

@@ -278,6 +278,7 @@ in {
     man-pages
     man-pages-posix
     parallel
+    inputs.pwndbg
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
