@@ -96,6 +96,8 @@
     pkgs.gomuks
     pkgs.element
     pkgs.element-desktop
+    pkgs.jetbrains.clion
+    pkgs.jetbrains.idea-ultimate
     # pkgs.nur.repos.mic92.hello-nur
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
