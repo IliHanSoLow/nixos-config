@@ -34,7 +34,7 @@
     pkgs.stylua
     pkgs.python3
     pkgs.go
-    pkgs.nodejs_21
+    pkgs.nodePackages_latest.nodejs
     pkgs.thefuck
     pkgs.starship
     pkgs.zoxide
