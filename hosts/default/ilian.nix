@@ -91,7 +91,7 @@
     pkgs.rawtherapee
     pkgs.jq
     pkgs.dfu-programmer
-    pkgs.cutter
+    # pkgs.cutter
     pkgs.weechat
     pkgs.gomuks
     pkgs.element
