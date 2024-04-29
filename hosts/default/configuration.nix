@@ -226,7 +226,6 @@ in {
     tree-sitter
     atuin
     dunst
-    mako
     gnomeExtensions.gsnap
     gnomeExtensions.gpu-profile-selector
     libnotify
