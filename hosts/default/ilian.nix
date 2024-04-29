@@ -168,6 +168,10 @@
   #   };
   # };
 
+  xdg.mimeApps.defaultApplications = {
+    "text/javascript" = "kitty -c nvim";
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
