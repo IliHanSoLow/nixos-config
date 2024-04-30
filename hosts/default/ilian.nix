@@ -99,7 +99,6 @@
     pkgs.jetbrains.clion
     pkgs.jetbrains.idea-ultimate
     pkgs.ghidra
-    pkgs.peazip
     # pkgs.nur.repos.mic92.hello-nur
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
