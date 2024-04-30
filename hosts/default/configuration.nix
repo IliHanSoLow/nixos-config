@@ -278,6 +278,7 @@ in {
     man-pages-posix
     parallel
     appimagekit
+    appimage-run
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
