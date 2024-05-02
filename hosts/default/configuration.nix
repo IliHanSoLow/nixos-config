@@ -77,11 +77,17 @@ in {
   };
   services.xserver.desktopManager.gnome.enable = true;
   # Awesome WM
-  services.xserver.windowManager.awesome = {
+  /*
+     services.xserver.windowManager.awesome = {
     enable = true;
     luaModules = with pkgs.luaPackages; [
       luarocks
     ];
+  };
+  */
+  # Ragnar WM
+  services.xserver.windowManager.ragnarwm = {
+    enable = true;
   };
 
   # Configure keymap in X11
