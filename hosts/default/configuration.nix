@@ -86,7 +86,7 @@ in {
   };
   */
   # Ragnar WM
-  pkgs.overlays = [
+  nixpkgs.overlays = [
     (final: prev: {
       ragnarwm = prev.ragnarwm.overrideAttrs (
         old: {src = /home/ilian/dotfiles/nixos/git_packages/Ragnar;}
