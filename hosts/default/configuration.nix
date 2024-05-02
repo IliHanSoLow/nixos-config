@@ -91,7 +91,7 @@ in {
     package = pkgs.ragnarwm.overrideAttrs {
       src = {
         url = "/home/ilian/dotfiles/nixos/git_packages/Ragnar";
-        branch = "ilian";
+        branch = "1.4";
       };
     };
   };
