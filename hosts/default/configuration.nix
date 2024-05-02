@@ -86,12 +86,10 @@ in {
   };
   */
   # Ragnar WM
-  /*
-     services.xserver.windowManager.ragnarwm = {
+  services.xserver.windowManager.ragnarwm = {
     enable = true;
     package = inputs.ragnar;
   };
-  */
 
   # Configure keymap in X11
   services.xserver.xkb = {

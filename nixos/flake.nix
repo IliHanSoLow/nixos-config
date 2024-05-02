@@ -20,7 +20,7 @@
       url = "github:outfoxxed/hy3";
       inputs.hyprland.follows = "hyprland";
     };
-    # ragnar.url = "git+file:///home/ilian/dotfiles/nixos/git_packages/Ragnar";
+    ragnar.url = "git+file:///home/ilian/dotfiles/nixos/git_packages/Ragnar";
   };
 
   outputs = {
