@@ -90,7 +90,7 @@ in {
     enable = true;
     package = pkgs.ragnarwm.overrideAttrs {
       src = {
-        url = "/home/ilian/dotfiles/nixos/git_packages/Ragnar";
+        url = /home/ilian/dotfiles/nixos/git_packages/Ragnar;
         branch = "1.4";
       };
     };
