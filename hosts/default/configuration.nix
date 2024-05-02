@@ -288,6 +288,7 @@ in {
     parallel
     appimagekit
     appimage-run
+    xorg.xinit
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
