@@ -89,7 +89,10 @@ in {
   services.xserver.windowManager.ragnarwm = {
     enable = true;
     package = pkgs.ragnarwm.overrideAttrs {
-      src = "git+file:///home/ilian/dotfiles/nixos/git_packages/Ragnar/";
+      src = {
+        url = "/home/ilian/dotfiles/nixos/git_packages/Ragnar";
+        branch = "ilian";
+      };
     };
   };
 
