@@ -86,11 +86,16 @@ in {
   };
   */
   # Ragnar WM
+  pkgs.overlays = [
+    (final: prev: {
+      ragnarwm = prev.ragnarwm.overrideAttrs (
+        old: {src = /home/ilian/dotfiles/nixos/git_packages/Ragnar;}
+      );
+    })
+  ];
   services.xserver.windowManager.ragnarwm = {
     enable = true;
-    package = pkgs.ragnarwm.overrideAttrs {
-      src = /home/ilian/dotfiles/nixos/git_packages/Ragnar;
-    };
+    package = pkgs.ragnarwm;
   };
 
   # Configure keymap in X11
