@@ -301,6 +301,7 @@ in {
     nitrogen
     picom
     alacritty
+    acpi
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
