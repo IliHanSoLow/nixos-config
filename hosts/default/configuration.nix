@@ -302,6 +302,7 @@ in {
     picom
     alacritty
     acpi
+    arc-icon-theme
   ];
 
   nixpkgs.config.permittedInsecurePackages = [

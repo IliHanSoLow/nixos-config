@@ -99,7 +99,6 @@
     pkgs.jetbrains.clion
     pkgs.jetbrains.idea-ultimate
     pkgs.ghidra
-    pkgs.arc-icon-theme
     pkgs.themechanger
     # pkgs.nur.repos.mic92.hello-nur
 
