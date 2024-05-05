@@ -288,7 +288,7 @@ in {
     xorg.xf86inputsynaptics
     xorg.xf86inputlibinput
     xorg.xf86videointel
-    corg.xf86videoati
+    xorg.xf86videoati
     xorg.xf86videonouveau
     xorg.libX11
     xorg.libXft
