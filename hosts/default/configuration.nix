@@ -296,6 +296,7 @@ in {
     xorg.libXcomposite
     xorg.xinit
     nitrogen
+    picom
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
