@@ -69,7 +69,7 @@ in {
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager = {
+  services.displayManager = {
     gdm = {
       enable = false;
       wayland = false;
@@ -286,7 +286,7 @@ in {
     appimage-run
     xorg.xorgserver
     xorg.xf86inputevdev
-    xorg.f86inputsynaptics
+    xorg.xf86inputsynaptics
     xorg.xf86inputlibinput
     xorg.xf86videointel
     corg.xf86videoati
