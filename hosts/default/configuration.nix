@@ -294,7 +294,7 @@ in {
     appimage-run
     (ragnarwm.overrideAttrs (oldAttrs: rec {
       src = /home/ilian/dotfiles/nixos/git_packages/ragnar;
-      buildInputs = oldAttrs.buildInputs ++ pkgs.xorg.libXrandr;
+      buildInputs = oldAttrs.buildInputs ++ [pkgs.xorg.libXrandr];
     }))
     xorg.libX11
     xorg.libXft
