@@ -91,6 +91,9 @@ in {
     layout = "eu, de";
     variant = "";
   };
+  services.libinput = {
+    touchpad.naturalScrolling = true;
+  };
   services.xserver.xkb.options = "caps:escape";
 
   # Configure console keymap
