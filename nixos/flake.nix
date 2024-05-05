@@ -68,7 +68,7 @@
         ./../XNM1Hypr/auto-upgrade.nix
         # ./../XNM1Hypr/linux-kernel.nix
         ./../XNM1Hypr/screen.nix
-        # ./../XNM1Hypr/display-manager.nix
+        ./../XNM1Hypr/display-manager.nix
         ./../XNM1Hypr/theme.nix
         # ./../XNM1Hypr/internationalisation.nix
         ./../XNM1Hypr/fonts.nix
