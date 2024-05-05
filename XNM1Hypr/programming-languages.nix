@@ -11,5 +11,6 @@
     #gmp is for calculatin with cobal
     gmp
     nim
+    nimble
   ];
 }
