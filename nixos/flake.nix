@@ -98,6 +98,7 @@
         ./../hosts/default/vm.nix
         # ./../hosts/default/theme.nix
         ./../hosts/default/cursor_theme.nix
+        ./../hosts/default/ragnar.nix
 
         inputs.home-manager.nixosModules.default
         inputs.nixos-hardware.nixosModules.lenovo-legion-15arh05h

@@ -85,15 +85,6 @@ in {
     ];
   };
   */
-  # Ragnar WM
-  /*
-     services.xserver.windowManager.ragnarwm = {
-    enable = true;
-    package = pkgs.ragnarwm.overrideAttrs {
-      src = /home/ilian/dotfiles/nixos/git_packages/Ragnar;
-    };
-  };
-  */
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -292,10 +283,6 @@ in {
     parallel
     appimagekit
     appimage-run
-    (ragnarwm.overrideAttrs (oldAttrs: rec {
-      src = /home/ilian/dotfiles/nixos/git_packages/ragnar;
-      buildInputs = oldAttrs.buildInputs ++ [pkgs.xorg.libXrandr];
-    }))
     xorg.libX11
     xorg.libXft
     xorg.libXcursor
