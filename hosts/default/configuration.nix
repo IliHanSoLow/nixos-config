@@ -300,6 +300,7 @@ in {
     xorg.xinit
     nitrogen
     picom
+    alacritty
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
