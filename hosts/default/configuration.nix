@@ -216,6 +216,8 @@ in {
     gh
     btop
     libgcc
+    gcc
+    glibc
     lld
     clang
     clang-tools
@@ -290,6 +292,13 @@ in {
     parallel
     appimagekit
     appimage-run
+    (ragnarwm.overrideAttrs {
+      src = /home/ilian/dotfiles/nixos/git_packages/Ragnar;
+    })
+    xorg.libX11
+    xorg.libXft
+    xorg.libXcursor
+    xorg.libXcomposite
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
