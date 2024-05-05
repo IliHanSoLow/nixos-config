@@ -287,6 +287,7 @@ in {
     xorg.libXft
     xorg.libXcursor
     xorg.libXcomposite
+    xorg.xinit
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
