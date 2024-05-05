@@ -100,6 +100,7 @@
     pkgs.jetbrains.idea-ultimate
     pkgs.ghidra
     pkgs.arc-icon-theme
+    pkgs.themechanger
     # pkgs.nur.repos.mic92.hello-nur
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
