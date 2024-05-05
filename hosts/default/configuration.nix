@@ -69,7 +69,7 @@ in {
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager = {
+  services.displayManager = {
     gdm = {
       enable = false;
       wayland = false;
