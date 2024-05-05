@@ -74,6 +74,7 @@ in {
       enable = false;
       wayland = false;
     };
+    startx.enable = true;
   };
   services.xserver.desktopManager.gnome.enable = true;
   # Awesome WM
