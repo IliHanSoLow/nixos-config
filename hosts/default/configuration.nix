@@ -292,9 +292,11 @@ in {
     parallel
     appimagekit
     appimage-run
-    (ragnarwm.overrideAttrs {
-      src = /home/ilian/dotfiles/nixos/git_packages/ragnar;
-    })
+    (ragnarwm.overrideAttrs (oldAttrs:
+      old {
+        src = /home/ilian/dotfiles/nixos/git_packages/ragnar;
+        buildInputs = old.buildInputs ++ libXrandr;
+      }))
     xorg.libX11
     xorg.libXft
     xorg.libXcursor
