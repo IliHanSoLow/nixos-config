@@ -78,14 +78,13 @@ in {
   };
   services.xserver.desktopManager.gnome.enable = true;
   # Awesome WM
-  /*
-     services.xserver.windowManager.awesome = {
+
+  services.xserver.windowManager.awesome = {
     enable = true;
     luaModules = with pkgs.luaPackages; [
       luarocks
     ];
   };
-  */
 
   # Configure keymap in X11
   services.xserver.xkb = {
