@@ -296,6 +296,7 @@ in {
     xorg.libXcursor
     xorg.libXcomposite
     xorg.xinit
+    nitrogen
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
