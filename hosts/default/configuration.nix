@@ -284,6 +284,13 @@ in {
     parallel
     appimagekit
     appimage-run
+    xorg.xorgserver
+    xorg.xf86inputevdev
+    xorg.f86inputsynaptics
+    xorg.xf86inputlibinput
+    xorg.xf86videointel
+    corg.xf86videoati
+    xorg.xf86videonouveau
     xorg.libX11
     xorg.libXft
     xorg.libXcursor
