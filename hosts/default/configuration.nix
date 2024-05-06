@@ -177,6 +177,7 @@ in {
   nixpkgs.config.allowUnfree = true;
   # Use Gnome Packages outside of gnome
   programs.dconf.enable = true;
+  services.gvfs.enable = true;
   /*
      nixpkgs.config.packageOverrides = pkgs: {
     nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
@@ -298,7 +299,6 @@ in {
     alacritty
     acpi
     arc-icon-theme
-    dolphin
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
