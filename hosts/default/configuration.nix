@@ -76,9 +76,7 @@ in {
     };
     startx.enable = true;
   };
-  services.xserver.desktopManager.gnome.enable = true;
   # Awesome WM
-
   services.xserver.windowManager.awesome = {
     enable = true;
     luaModules = with pkgs.luaPackages; [
@@ -177,6 +175,8 @@ in {
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  # Use Gnome Packages outside of gnome
+  programs.dconf.enable = true;
   /*
      nixpkgs.config.packageOverrides = pkgs: {
     nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
@@ -233,8 +233,6 @@ in {
     tree-sitter
     atuin
     dunst
-    gnomeExtensions.gsnap
-    gnomeExtensions.gpu-profile-selector
     libnotify
     blueman
     lshw
@@ -249,8 +247,6 @@ in {
     hunspellDicts.en_US
     hunspellDicts.de_DE
     mpv
-    gnomeExtensions.appindicator
-    gnome.gnome-settings-daemon
     audacious
     lollypop
     tmux-sessionizer

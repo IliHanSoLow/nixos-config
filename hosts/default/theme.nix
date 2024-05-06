@@ -3,6 +3,7 @@
   environment.variables.GTK_THEME = "Catppuccin-Macchiato-Standard-Teal-Dark";
   environment.variables.XCURSOR_THEME = "Catppuccin-Macchiato-Teal";
   environment.variables.XCURSOR_SIZE = "24";
+  environment.variables.QT_QPA_PLATFORM = "wayland";
   console = {
     earlySetup = true;
     colors = [
