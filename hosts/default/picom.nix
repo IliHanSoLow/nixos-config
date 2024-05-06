@@ -1,8 +1,4 @@
-{
-  pkgs,
-  fetchFromGitHub,
-  ...
-}: let
+{pkgs, ...}: let
   mypicom = pkgs.picom.overrideAttrs (old: rec {
     src = fetchFromGitHub {
       owner = "pijulius";
