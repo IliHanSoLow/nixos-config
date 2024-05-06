@@ -299,7 +299,14 @@ in {
     xorg.libXcomposite
     xorg.xinit
     nitrogen
-    picom
+    (picom.overrideAttrs {
+      src = fetchFromGitHub {
+        owner = "pijulius";
+        repo = "picom";
+        rev = "e7b14886ae644aaa657383f7c4f44be7797fd5f6"; # This is the commit hash
+        fetchSubmodules = true;
+      };
+    })
     alacritty
     acpi
     arc-icon-theme
