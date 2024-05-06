@@ -298,6 +298,7 @@ in {
     alacritty
     acpi
     arc-icon-theme
+    dolphin
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
