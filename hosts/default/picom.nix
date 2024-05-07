@@ -15,7 +15,7 @@
       repo = "picom";
       rev = "dac85eac10082dfc3df463aaa74b811144e22122"; # This is the commit hash
       fetchSubmodules = true;
-      sha256 = "";
+      sha256 = "sha256-1L0+QLm8H+HWTKdoGV1ouUZhlb73BL7pe/V28b3SUz4=";
     };
     buildInputs = old.buildInputs ++ [pkgs.pcre.dev];
   });
