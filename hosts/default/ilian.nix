@@ -20,103 +20,108 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
-    # pkgs.hello
-    pkgs.cargo
-    pkgs.rustc
-    pkgs.clippy
-    pkgs.yazi
-    pkgs.black
-    pkgs.isort
-    pkgs.prettierd
-    pkgs.stylua
-    pkgs.python3
-    pkgs.go
-    pkgs.nodePackages_latest.nodejs
-    pkgs.thefuck
-    pkgs.starship
-    pkgs.zoxide
-    pkgs.direnv
-    pkgs.zathura
-    pkgs.jdk21
-    pkgs.signal-desktop
-    pkgs.gdb
-    pkgs.protonvpn-gui
-    pkgs.zapzap
-    pkgs.figlet
-    pkgs.emote
-    pkgs.winetricks
-    pkgs.wineWowPackages.waylandFull
-    pkgs.gthumb
-    pkgs.cachix
-    pkgs.ventoy-full
-    pkgs.xournalpp
-    pkgs.steam
-    (
-      pkgs.ncmpcpp.override
-      {visualizerSupport = true;}
-    )
-    pkgs.cbonsai
-    pkgs.nmap
-    pkgs.typst
-    pkgs.zig
-    pkgs.godot_4
-    pkgs.qmk
-    pkgs.bear
-    pkgs.libreoffice
-    pkgs.libsForQt5.kdeconnect-kde
-    pkgs.anki
-    pkgs.lutris
-    pkgs.gzdoom
-    pkgs.gimp
-    pkgs.vulkan-tools
-    pkgs.media-downloader
-    pkgs.tartube
-    pkgs.yt-dlp
-    pkgs.ffmpeg
-    pkgs.gradle
-    pkgs.maven
-    pkgs.tree
-    (
-      pkgs.discord.override
-      {
-        withOpenASAR = true;
-        withTTS = true;
-      }
-    )
-    pkgs.sioyek
-    pkgs.glava
-    pkgs.rawtherapee
-    pkgs.jq
-    pkgs.dfu-programmer
-    # pkgs.cutter
-    pkgs.weechat
-    pkgs.gomuks
-    pkgs.element
-    pkgs.element-desktop
-    pkgs.jetbrains.clion
-    pkgs.jetbrains.idea-ultimate
-    pkgs.ghidra
-    pkgs.themechanger
-    pkgs.loupe
-    pkgs.localsend
-    # pkgs.nur.repos.mic92.hello-nur
+  home.packages = with pkgs;
+    [
+      # # Adds the 'hello' command to your environment. It prints a friendly
+      # # "Hello, world!" when run.
+      # pXkgs.hello
+      cargo
+      rustc
+      clippy
+      yazi
+      black
+      isort
+      prettierd
+      stylua
+      python3
+      go
+      nodePackages_latest.nodejs
+      thefuck
+      starship
+      zoxide
+      direnv
+      zathura
+      jdk21
+      signal-desktop
+      gdb
+      protonvpn-gui
+      zapzap
+      figlet
+      emote
+      winetricks
+      wineWowPackages.waylandFull
+      gthumb
+      cachix
+      ventoy-full
+      xournalpp
+      steam
+      (
+        ncmpcpp.override
+        {visualizerSupport = true;}
+      )
+      cbonsai
+      nmap
+      typst
+      zig
+      godot_4
+      qmk
+      bear
+      libreoffice
+      libsForQt5.kdeconnect-kde
+      anki
+      lutris
+      gzdoom
+      gimp
+      vulkan-tools
+      media-downloader
+      tartube
+      yt-dlp
+      ffmpeg
+      gradle
+      maven
+      tree
+      (
+        discord.override
+        {
+          withOpenASAR = true;
+          withTTS = true;
+        }
+      )
+      sioyek
+      glava
+      rawtherapee
+      jq
+      dfu-programmer
+      # cutter
+      weechat
+      gomuks
+      element
+      element-desktop
+      jetbrains.clion
+      jetbrains.idea-ultimate
+      ghidra
+      themechanger
+      loupe
+      localsend
+    ]
+    ++ (
+      with pkgs.nur; [
+        pkgs.nur.repos.mic92.hello-nur
 
-    # # It is sometimes useful to fine-tune packages, for example, by applying
-    # # overrides. You can do that directly here, just don't forget the
-    # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
-    # # fonts?
-    # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
+        # # It is sometimes useful to fine-tune packages, for example, by applying
+        # # overrides. You can do that directly here, just don't forget the
+        # # parentheses. Maybe you want to install Nerd Fonts with a limited number of
+        # # fonts?
+        # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
 
-    # # You can also create simple shell scripts directly inside your
-    # # configuration. For example, this adds a command 'my-hello' to your
-    # # environment:
-    # (pkgs.writeShellScriptBin "my-hello" ''
-    #   echo "Hello, ${config.home.username}!"
-    # '')
-  ];
+        # # You can also create simple shell scripts directly inside your
+        # # configuration. For example, this adds a command 'my-hello' to your
+        # # environment:
+        # (pkgs.writeShellScriptBin "my-hello" ''
+        #   echo "Hello, ${config.home.username}!"
+        # '')
+      ]
+    );
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
