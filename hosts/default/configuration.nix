@@ -299,7 +299,6 @@ in {
     alacritty
     acpi
     arc-icon-theme
-    picom-jonaburg
   ];
 
   nixpkgs.config.permittedInsecurePackages = [

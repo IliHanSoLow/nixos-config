@@ -1,5 +1,5 @@
 {pkgs, ...}: let
-  mypicom = pkgs.picom.overrideAttrs (old: rec {
+  pijulius-picom = pkgs.picom.overrideAttrs (old: rec {
     src = pkgs.fetchFromGitHub {
       owner = "pijulius";
       repo = "picom";
@@ -9,8 +9,17 @@
     };
     buildInputs = old.buildInputs ++ [pkgs.pcre.dev];
   });
+  pijulius-picom-stable = pkgs.picom.overrideAttrs (old: rec {
+    src = pkgs.fetchFromGitHub {
+      owner = "pijulius";
+      repo = "picom";
+      rev = "dac85eac10082dfc3df463aaa74b811144e22122"; # This is the commit hash
+      fetchSubmodules = true;
+      sha256 = "";
+    };
+    buildInputs = old.buildInputs ++ [pkgs.pcre.dev];
+  });
 in {
   environment.systemPackages = with pkgs; [
-    mypicom
   ];
 }
