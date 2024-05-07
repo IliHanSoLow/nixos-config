@@ -98,7 +98,6 @@
         ./../hosts/default/vm.nix
         # ./../hosts/default/theme.nix
         ./../hosts/default/cursor_theme.nix
-        ./../hosts/default/ragnar.nix
         ./../hosts/default/picom.nix
 
         inputs.home-manager.nixosModules.default
