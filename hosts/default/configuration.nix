@@ -294,6 +294,7 @@ in {
     xorg.libXft
     xorg.libXcursor
     xorg.libXcomposite
+    xorg.libXinerama
     xorg.xinit
     nitrogen
     alacritty
