@@ -104,6 +104,7 @@
       loupe
       localsend
       webcord
+      inetutils
     ]
     ++ (
       with pkgs.nur; [
