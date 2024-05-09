@@ -103,6 +103,7 @@
       themechanger
       loupe
       localsend
+      webcord
     ]
     ++ (
       with pkgs.nur; [
