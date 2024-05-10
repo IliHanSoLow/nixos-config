@@ -105,6 +105,9 @@
       localsend
       webcord
       inetutils
+      # cmatrix| lolcat
+      cmatrix
+      lolcat
     ]
     ++ (
       with pkgs.nur; [
