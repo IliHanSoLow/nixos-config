@@ -108,6 +108,7 @@
       # cmatrix| lolcat
       cmatrix
       lolcat
+      obs-studio
     ]
     ++ (
       with pkgs.nur; [
