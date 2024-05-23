@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   # Enable Display Manager
   services.greetd = {
-    enable = true;
+    enable = false;
     settings = {
       default_session = {
         command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --time-format '%I:%M %p | %a • %h | %F' --cmd /home/ilian/.bootscript.sh";
