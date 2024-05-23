@@ -71,10 +71,10 @@ in {
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager = {
     gdm = {
-      enable = true;
-      wayland = true;
+      enable = false;
+      wayland = false;
     };
-    startx.enable = false;
+    startx.enable = true;
   };
   # Awesome WM
   services.xserver.windowManager.awesome = {
@@ -354,7 +354,7 @@ in {
   #CPU Power save
   services.power-profiles-daemon.enable = false; #Disable GNOME PowerProfile
   powerManagement.enable = true;
-  services.tlp.enable = false;
+  services.tlp.enable = true;
 
   #fuck you NVIDIA
 
@@ -385,7 +385,7 @@ in {
     # https://github.com/NVIDIA/open-gpu-kernel-modules#compatible-gpus
     # Only available from driver 515.43.04+
     # Currently alpha-quality/buggy, so false is currently the recommended setting.
-    open = true;
+    open = false;
 
     # Enable the Nvidia settings menu,
     # accessible via `nvidia-settings`.
