@@ -1,10 +1,10 @@
 {pkgs, ...}: {
   # Enable Display Manager
   services.greetd = {
-    enable = false;
+    enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --time-format '%I:%M %p | %a • %h | %F' --cmd /home/ilian/.bootscript.sh";
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --r --time --time-format '%I:%M %p | %a • %h | %F' --cmd /home/ilian/.bootscript.sh";
         user = "greeter";
       };
     };
