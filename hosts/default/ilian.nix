@@ -174,13 +174,6 @@
       };
     };
   };
-  programs = {
-    steam.enable = true;
-    #   rofi = {
-    #     enable = true;
-    #     plugins = [pkgs.rofi-emoji];
-    #   };
-  };
 
   xdg.mimeApps.defaultApplications = {
     "text/javascript" = "kitty -c nvim";

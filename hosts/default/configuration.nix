@@ -317,6 +317,7 @@ in {
       package = inputs.hyprland.packages.${pkgs.system}.hyprland;
     };
     fish.enable = true;
+    steam.enable = true;
   };
 
   #Hyprland
