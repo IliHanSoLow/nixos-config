@@ -54,7 +54,6 @@
       cachix
       ventoy-full
       xournalpp
-      steam
       (
         ncmpcpp.override
         {visualizerSupport = true;}
@@ -175,12 +174,13 @@
       };
     };
   };
-  # programs = {
-  #   rofi = {
-  #     enable = true;
-  #     plugins = [pkgs.rofi-emoji];
-  #   };
-  # };
+  programs = {
+    steam.enable = true;
+    #   rofi = {
+    #     enable = true;
+    #     plugins = [pkgs.rofi-emoji];
+    #   };
+  };
 
   xdg.mimeApps.defaultApplications = {
     "text/javascript" = "kitty -c nvim";
