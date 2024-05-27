@@ -108,6 +108,7 @@
       cmatrix
       lolcat
       obs-studio
+      nchat
     ]
     ++ (
       with pkgs.nur; [
