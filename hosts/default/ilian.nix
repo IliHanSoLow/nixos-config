@@ -108,7 +108,7 @@
       cmatrix
       lolcat
       obs-studio
-      nchat
+      (nchat.override {cmakeFlags = [];})
     ]
     ++ (
       with pkgs.nur; [
