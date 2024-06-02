@@ -167,7 +167,7 @@ in {
   users.users.ilian = {
     isNormalUser = true;
     description = "ilian";
-    extraGroups = ["networkmanager" "input" "wheel" "video" "audio" "tss" "libvirtd" "dialout"];
+    extraGroups = ["networkmanager" "input" "wheel" "video" "audio" "tss" "libvirtd"];
     packages = with pkgs; [
     ];
   };
