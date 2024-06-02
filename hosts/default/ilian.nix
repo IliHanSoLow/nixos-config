@@ -108,6 +108,7 @@
       cmatrix
       lolcat
       obs-studio
+      arduino
     ]
     ++ (
       with pkgs.nur; [
