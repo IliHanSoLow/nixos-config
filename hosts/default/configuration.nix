@@ -303,7 +303,7 @@ in {
     arc-icon-theme
     bc
     cbatticon
-    slock
+    xautolock
     i3lock
   ];
 
