@@ -296,11 +296,13 @@ in {
     xorg.libXcomposite
     xorg.libXinerama
     xorg.xinit
+    arandr
     nitrogen
     alacritty
     acpi
     arc-icon-theme
     bc
+    cbatticon
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
