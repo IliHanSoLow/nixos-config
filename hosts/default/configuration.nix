@@ -303,7 +303,7 @@ in {
     arc-icon-theme
     bc
     cbatticon
-    slock
+    suckless-tools
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
