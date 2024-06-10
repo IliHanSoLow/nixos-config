@@ -303,6 +303,7 @@ in {
     arc-icon-theme
     bc
     cbatticon
+    slock
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
