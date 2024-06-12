@@ -305,6 +305,8 @@ in {
     cbatticon
     xautolock
     i3lock
+    xss-lock
+    numlockx
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
