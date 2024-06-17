@@ -110,6 +110,7 @@
       obs-studio
       arduino
       kdePackages.kcalc
+      ulauncher
     ]
     ++ (
       with pkgs.nur; [
