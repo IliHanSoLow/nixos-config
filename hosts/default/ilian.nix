@@ -109,6 +109,7 @@
       lolcat
       obs-studio
       arduino
+      kdePackages.kcalc
     ]
     ++ (
       with pkgs.nur; [
