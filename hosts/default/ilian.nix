@@ -110,6 +110,7 @@
       obs-studio
       arduino
       kdePackages.kcalc
+      piper
     ]
     ++ (
       with pkgs.nur; [
