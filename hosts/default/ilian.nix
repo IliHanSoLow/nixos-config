@@ -111,6 +111,7 @@
       arduino
       kdePackages.kcalc
       piper
+      gnome.simple-scan
     ]
     ++ (
       with pkgs.nur; [

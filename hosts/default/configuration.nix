@@ -310,6 +310,7 @@ in {
     i3lock
     xss-lock
     numlockx
+    flameshot
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
