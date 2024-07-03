@@ -112,6 +112,7 @@
       kdePackages.kcalc
       piper
       gnome.simple-scan
+      halloy
     ]
     ++ (
       with pkgs.nur; [
