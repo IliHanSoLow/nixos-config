@@ -311,6 +311,7 @@ in {
     xss-lock
     numlockx
     flameshot
+    emacs
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
