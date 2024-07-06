@@ -26,6 +26,7 @@
       # # "Hello, world!" when run.
       # pXkgs.hello
       cargo
+      geeqie
       rustc
       clippy
       yazi
