@@ -125,7 +125,7 @@ in {
   # Set bluetooth
   hardware.bluetooth.enable = true;
   hardware.bluetooth.package = pkgs.bluez;
-  hardware.bluetooth.powerOnBoot = true;
+  hardware.bluetooth.powerOnBoot = false;
   services.blueman.enable = true;
   systemd.user.services.mpris-proxy = {
     description = "Mpris proxy";
