@@ -25,6 +25,7 @@
       # # Adds the 'hello' command to your environment. It prints a friendly
       # # "Hello, world!" when run.
       # pXkgs.hello
+      sl
       cargo
       rustc
       clippy
