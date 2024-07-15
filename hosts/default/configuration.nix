@@ -312,6 +312,7 @@ in {
     numlockx
     flameshot
     emacs
+    p7zip
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
