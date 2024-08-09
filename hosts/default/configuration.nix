@@ -300,6 +300,7 @@ in {
     xorg.libXinerama
     xorg.xinit
     arandr
+    wdisplays
     nitrogen
     alacritty
     acpi
