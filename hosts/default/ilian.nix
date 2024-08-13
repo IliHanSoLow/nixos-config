@@ -114,7 +114,7 @@
       piper
       gnome.simple-scan
       halloy
-      Okular
+      kdePackages.okular
     ]
     ++ (
       with pkgs.nur; [
