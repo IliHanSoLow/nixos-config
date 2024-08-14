@@ -115,7 +115,6 @@
       gnome.simple-scan
       halloy
       kdePackages.okular
-      threema-desktop
     ]
     ++ (
       with pkgs.nur; [
