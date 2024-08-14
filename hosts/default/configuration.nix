@@ -314,6 +314,7 @@ in {
     flameshot
     emacs
     p7zip
+    kdePackages.partitionmanager
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
