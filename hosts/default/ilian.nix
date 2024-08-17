@@ -115,9 +115,6 @@
       gnome.simple-scan
       halloy
       kdePackages.okular
-      minigalaxy
-      gamehub
-      protonplus
     ]
     ++ (
       with pkgs.nur; [
