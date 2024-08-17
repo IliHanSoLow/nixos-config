@@ -117,6 +117,7 @@
       kdePackages.okular
       minigalaxy
       gamehub
+      protonplus
     ]
     ++ (
       with pkgs.nur; [
