@@ -317,6 +317,7 @@ in {
     kdePackages.partitionmanager
     wireguard-tools
     openvpn
+    openresolv
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
