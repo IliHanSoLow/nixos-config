@@ -79,7 +79,7 @@
         ./../XNM1Hypr/hyprland.nix
         ./../XNM1Hypr/environment-variables.nix
         # ./../XNM1Hypr/bluetooth.nix
-        # ./../XNM1Hypr/networking.nix
+        ./../XNM1Hypr/networking.nix
         # ./../XNM1Hypr/mac-randomize.nix
         # ./../XNM1Hypr/open-ssh.nix
         ./../XNM1Hypr/firewall.nix

@@ -315,6 +315,8 @@ in {
     emacs
     p7zip
     kdePackages.partitionmanager
+    wireguard-tools
+    openvpn
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
