@@ -333,6 +333,7 @@ in {
     };
     fish.enable = true;
     steam.enable = true;
+    openvpn3.enable = true;
   };
 
   #Hyprland
