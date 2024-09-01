@@ -115,6 +115,7 @@
       gnome.simple-scan
       halloy
       kdePackages.okular
+      teamspeak_client
     ]
     ++ (
       with pkgs.nur; [
