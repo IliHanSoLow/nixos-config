@@ -112,7 +112,7 @@
       arduino
       kdePackages.kcalc
       piper
-      gnome.simple-scan
+      simple-scan
       halloy
       kdePackages.okular
       teamspeak_client
