@@ -73,7 +73,7 @@
       gzdoom
       gimp
       vulkan-tools
-      media-downloader
+      # media-downloader
       tartube
       yt-dlp
       ffmpeg
