@@ -28,10 +28,14 @@ echo "NixOS Rebuilding..."
 
 # Rebuild, output simplified errors, log trackebacks
 # sudo nixos-rebuild switch --flake /home/ilian/dotfiles/nixos/nixos/#default &>nixos-switch.log || (cat nixos-switch.log | grep --color error && false)
-read -p "Do you want to fully-update? (y/N): " answer
+read -p "Do you want to fully-update? (y/b/r/N): " answer
 
 if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
 sudo nixos-rebuild switch --flake /home/ilian/dotfiles/nixos/nixos#hyprland --update-input nixpkgs --update-input rust-overlay --update-input home-manager --update-input hyprland --update-input nixos-hardware --update-input nur --update-input hy3
+elif [[ "$answer" == "b" || "$answer" == "boot" ]]; then
+sudo nixos-rebuild boot --flake /home/ilian/dotfiles/nixos/nixos#hyprland --update-input nixpkgs --update-input rust-overlay --update-input home-manager --update-input hyprland --update-input nixos-hardware --update-input nur --update-input hy3
+elif [[ "$answer" == "r" || "$answer" == "reboot" ]]; then
+sudo nixos-rebuild boot --flake /home/ilian/dotfiles/nixos/nixos/#hyprland
 else 
 sudo nixos-rebuild switch --flake /home/ilian/dotfiles/nixos/nixos/#hyprland
 fi
