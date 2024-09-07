@@ -203,7 +203,7 @@
     systemd.enable = true;
 
     plugins = [
-      # inputs.hy3.packages.x86_64-linux.hy3
+      inputs.hy3.packages.x86_64-linux.hy3
     ];
 
     extraConfig = builtins.readFile ./../../hypr/hyprland.conf;

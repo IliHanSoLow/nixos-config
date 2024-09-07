@@ -7,7 +7,22 @@
     enable = true;
     operation = "switch"; # If you don't want to apply updates immediately, only after rebooting, use `boot` option in this case
     flake = "/home/ilian/dotfiles/nixos/nixos";
-    flags = ["--update-input" "nixpkgs" "--update-input" "rust-overlay"];
+    flags = [
+      "--update-input"
+      "nixpkgs"
+      "--update-input"
+      "rust-overlay"
+      "--update-input"
+      "home-manager"
+      "--update-input"
+      "hyprland"
+      "--update-input"
+      "nixos-hardware"
+      "--update-input"
+      "nur"
+      "--update-input"
+      "hy3"
+    ];
     dates = "weekly";
     # channel = "https://nixos.org/channels/nixos-unstable";
   };

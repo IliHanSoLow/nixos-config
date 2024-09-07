@@ -102,7 +102,6 @@ in {
   services.printing.drivers = [pkgs.gutenprint];
 
   # Enable sound with pipewire.
-  sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -377,7 +376,6 @@ in {
 
   hardware.opengl = {
     enable = true;
-    driSupport = true;
     driSupport32Bit = true;
   };
   services.xserver.videoDrivers = ["nvidia"];
