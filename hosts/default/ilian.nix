@@ -94,9 +94,8 @@
       dfu-programmer
       # cutter
       weechat
-      gomuks
-      element
-      element-desktop
+      # element
+      # element-desktop
       jetbrains.clion
       jetbrains.idea-ultimate
       ghidra
