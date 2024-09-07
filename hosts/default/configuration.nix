@@ -374,7 +374,7 @@ in {
 
   #fuck you NVIDIA
 
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
     driSupport32Bit = true;
   };
