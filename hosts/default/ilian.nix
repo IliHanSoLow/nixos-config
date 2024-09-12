@@ -115,6 +115,7 @@
       halloy
       kdePackages.okular
       teamspeak_client
+      nextcloud-client
     ]
     ++ (
       with pkgs.nur; [
