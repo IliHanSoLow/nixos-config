@@ -2,7 +2,7 @@
   environment.systemPackages = with pkgs; [
     wasmedge
     wasmer
-    lunatic
+    # lunatic
     wasmi
     # wasm3
   ];
