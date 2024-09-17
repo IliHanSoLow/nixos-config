@@ -92,7 +92,7 @@ in {
   services.libinput = {
     touchpad.naturalScrolling = true;
   };
-  services.xserver.xkb.options = "caps:escape";
+  services.xserver.xkb.options = "ctrl:nocaps";
 
   # Configure console keymap
   console.keyMap = "us";
