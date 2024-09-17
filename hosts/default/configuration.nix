@@ -71,10 +71,11 @@ in {
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager = {
     gdm = {
-      enable = false;
+      enable = true;
       wayland = false;
     };
-    startx.enable = true;
+    gnome.enable = true;
+    startx.enable = false;
   };
   # Awesome WM
   services.xserver.windowManager.awesome = {
