@@ -322,7 +322,7 @@ in {
 
   nix.settings = {
     substituters = [
-      "https://https://hyprland.cachix.org"
+      "https://hyprland.cachix.org"
       "https://nix-community.cachix.org"
       "https://cache.nixos.org/"
     ];
