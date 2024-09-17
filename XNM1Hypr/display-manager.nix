@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   # Enable Display Manager
+
   services.greetd = {
     enable = true;
     settings = {
