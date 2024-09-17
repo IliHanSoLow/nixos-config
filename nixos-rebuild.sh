@@ -31,9 +31,9 @@ echo "NixOS Rebuilding..."
 read -p "Do you want to fully-update? (y/b/r/N): " answer
 
 if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
-sudo nixos-rebuild switch --flake /home/ilian/dotfiles/nixos/nixos#hyprland --update-input nixpkgs --update-input rust-overlay --update-input home-manager --update-input hyprland --update-input nixos-hardware --update-input nur --update-input hy3
+sudo nixos-rebuild switch --flake /home/ilian/dotfiles/nixos/nixos#hyprland --update-input nixpkgs --update-input rust-overlay --update-input home-manager --update-input nixos-hardware --update-input nur
 elif [[ "$answer" == "b" || "$answer" == "boot" ]]; then
-sudo nixos-rebuild boot --flake /home/ilian/dotfiles/nixos/nixos#hyprland --update-input nixpkgs --update-input rust-overlay --update-input home-manager --update-input hyprland --update-input nixos-hardware --update-input nur --update-input hy3
+sudo nixos-rebuild boot --flake /home/ilian/dotfiles/nixos/nixos#hyprland --update-input nixpkgs --update-input rust-overlay --update-input home-manager --update-input nixos-hardware --update-input nur
 elif [[ "$answer" == "r" || "$answer" == "reboot" ]]; then
 sudo nixos-rebuild boot --flake /home/ilian/dotfiles/nixos/nixos/#hyprland
 else 
