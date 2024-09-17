@@ -76,7 +76,7 @@ in {
     };
     startx.enable = false;
   };
-  services.xsercer.desktopManager.gnome.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
   # Awesome WM
   services.xserver.windowManager.awesome = {
     enable = true;
