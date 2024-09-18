@@ -315,6 +315,7 @@ in {
     emacs
     p7zip
     kdePackages.partitionmanager
+    nwg-look
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
