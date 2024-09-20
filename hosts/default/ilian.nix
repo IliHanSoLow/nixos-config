@@ -232,9 +232,11 @@
     # Wayland, X, etc. support for session vars
     systemd.user.sessionVariables = config.home-manager.users.justinas.home.sessionVariables;
   };
-  qt = {
+  /*
+     qt = {
     enable = true;
     platformTheme = "gnome";
     style = "adwaita-dark";
   };
+  */
 }
