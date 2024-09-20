@@ -227,7 +227,4 @@
       package = pkgs.gnome.gnome-themes-extra;
     };
   };
-
-  # Wayland, X, etc. support for session vars
-  systemd.user.sessionVariables = home.sessionVariables;
 }
