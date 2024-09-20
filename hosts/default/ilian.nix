@@ -3,6 +3,7 @@
   pkgs,
   inputs,
   lib,
+  home,
   ...
 }: {
   # Home Manager needs a bit of information about you and the paths it should
@@ -229,5 +230,5 @@
   };
 
   # Wayland, X, etc. support for session vars
-  systemd.user.sessionVariables = config.home-manager.users.ilian.home.sessionVariables;
+  systemd.user.sessionVariables = home.sessionVariables;
 }
