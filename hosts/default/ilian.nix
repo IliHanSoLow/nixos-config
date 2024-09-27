@@ -116,6 +116,7 @@
       kdePackages.okular
       teamspeak_client
       nextcloud-client
+      vscodium
     ]
     ++ (
       with pkgs.nur; [
