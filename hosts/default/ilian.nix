@@ -117,6 +117,7 @@
       teamspeak_client
       nextcloud-client
       vscodium
+      jdt-language-server
     ]
     ++ (
       with pkgs.nur; [
