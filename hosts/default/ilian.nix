@@ -118,7 +118,6 @@
       nextcloud-client
       vscodium
       jdt-language-server
-      protonmail-desktop
     ]
     ++ (
       with pkgs.nur; [
