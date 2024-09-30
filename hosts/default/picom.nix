@@ -1,5 +1,6 @@
 {pkgs, ...}: let
-  pijulius-picom = pkgs.picom.overrideAttrs (old: rec {
+  /*
+     pijulius-picom = pkgs.picom.overrideAttrs (old: rec {
     src = pkgs.fetchFromGitHub {
       owner = "pijulius";
       repo = "picom";
@@ -9,6 +10,7 @@
     };
     buildInputs = old.buildInputs ++ [pkgs.pcre.dev];
   });
+  */
   /*
      pijulius-picom-stable = pkgs.picom.overrideAttrs (old: rec {
     src = pkgs.fetchFromGitHub {
@@ -23,6 +25,7 @@
   */
 in {
   environment.systemPackages = with pkgs; [
-    pijulius-picom
+    # pijulius-picom
+    picom-pijulius
   ];
 }
