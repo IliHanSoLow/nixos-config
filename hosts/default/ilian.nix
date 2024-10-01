@@ -118,6 +118,8 @@
       nextcloud-client
       vscodium
       jdt-language-server
+      bluez
+      bluez-tools
     ]
     ++ (
       with pkgs.nur; [
