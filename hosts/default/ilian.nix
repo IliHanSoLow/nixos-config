@@ -120,6 +120,7 @@
       jdt-language-server
       bluez
       bluez-tools
+      streamlink-twitch-gui-bin
     ]
     ++ (
       with pkgs.nur; [
