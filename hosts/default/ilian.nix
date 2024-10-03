@@ -121,6 +121,7 @@
       bluez
       bluez-tools
       streamlink-twitch-gui-bin
+      vlc
     ]
     ++ (
       with pkgs.nur; [
