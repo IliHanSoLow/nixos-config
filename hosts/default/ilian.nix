@@ -123,6 +123,7 @@
       streamlink-twitch-gui-bin
       vlc
       calc
+      zap
     ]
     ++ (
       with pkgs.nur; [
