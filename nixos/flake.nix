@@ -14,6 +14,8 @@
     nur.url = "github:nix-community/NUR";
 
     rust-overlay.url = "github:oxalica/rust-overlay";
+
+    woomer.url = "github:coffeeispower/woomer";
   };
 
   outputs = {

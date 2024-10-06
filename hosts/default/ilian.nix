@@ -124,6 +124,7 @@
       vlc
       calc
       zap
+      inputs.woomer.packages.${system}.default
     ]
     ++ (
       with pkgs.nur; [
