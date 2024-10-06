@@ -124,6 +124,7 @@
       vlc
       calc
       zap
+      chatterino
     ]
     ++ (
       with pkgs.nur; [
