@@ -127,6 +127,7 @@
       chatterino2
       calibre
       unipicker
+      persepolis
     ]
     ++ (
       with pkgs.nur; [
