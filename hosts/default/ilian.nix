@@ -126,6 +126,7 @@
       zap
       chatterino2
       calibre
+      unipicker
     ]
     ++ (
       with pkgs.nur; [
