@@ -316,6 +316,7 @@ in {
     p7zip
     kdePackages.partitionmanager
     nwg-look
+    blesh
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
