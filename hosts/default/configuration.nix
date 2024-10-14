@@ -317,6 +317,7 @@ in {
     kdePackages.partitionmanager
     nwg-look
     blesh
+    age
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
