@@ -128,7 +128,6 @@
       calibre
       unipicker
       persepolis
-      gf
     ]
     ++ (
       with pkgs.nur; [
