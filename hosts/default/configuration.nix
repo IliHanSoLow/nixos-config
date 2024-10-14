@@ -318,6 +318,7 @@ in {
     nwg-look
     blesh
     age
+    eduvpn-client
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
