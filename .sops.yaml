@@ -1,0 +1,11 @@
+keys:
+- &users:
+  - &ilian age14zfcwfcs4egqx9w594kxwjgdhz44lmy6p903exntz0p7uha4f52qtkefeg
+- &hosts:
+  - &legionofnix dsjfalkfsajdjfhbgskvnjkvsj
+
+creation_rules:
+- path_regex: hosts/common/secrets/[^/]+\.(yaml|json|env|ini)$
+  key_groups:
+  - age:
+    - *ilian
