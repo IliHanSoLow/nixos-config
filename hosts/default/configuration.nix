@@ -14,6 +14,7 @@ in {
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
+    inputs.sops-nix.nixosModules.sops
   ];
   networking.hostName = hostname; # Define your hostname.
 
@@ -433,4 +434,6 @@ in {
 
     # here, NOT in environment.systemPackages
   ];
+
+  sops.age.keyFile = "/home/ilian/.config/sops/age/keys.txt";
 }

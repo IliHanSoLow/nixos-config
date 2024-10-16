@@ -91,6 +91,8 @@
         ./../hosts/default/cursor_theme.nix
         ./../hosts/default/picom.nix
 
+        ./../optional/vpns.nix
+
         inputs.home-manager.nixosModules.default
         inputs.nixos-hardware.nixosModules.lenovo-legion-15arh05h
         {nixpkgs.overlays = [nur.overlay];}
