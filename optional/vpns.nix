@@ -1,6 +1,6 @@
 {config, ...}: {
   sops.secrets.NLFREE387043 = {
-    sops.file = ../hosts/common/secrets/secrets.yaml;
+    sopsFile = ../hosts/common/secrets/secrets.yaml;
     neededForUsers = true;
   };
   networking.wireguard.secretsFile = config.sops.secrets.NLFREE387043.path;

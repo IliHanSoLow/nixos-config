@@ -320,7 +320,6 @@ in {
     blesh
     age
     ssh-to-age
-    sops
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
