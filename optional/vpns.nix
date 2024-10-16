@@ -1,8 +1,13 @@
-{config, ...}: {
+{
+  config,
+  lib,
+  ...
+}: {
   sops.secrets.NLFREE387043 = {
     sopsFile = ../hosts/common/secrets/secrets.yaml;
     neededForUsers = true;
   };
+
   networking.wg-quick.interfaces = {
     ProtonNLFree = {
       address = ["10.2.0.2/32"];
@@ -18,6 +23,7 @@
           persistentKeepalive = 25;
         }
       ];
+      autostart = false;
     };
   };
 }
