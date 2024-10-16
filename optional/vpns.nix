@@ -4,7 +4,7 @@
     neededForUsers = true;
   };
   networking.wg-quick.interfaces = {
-    NLFREE387043 = {
+    ProtonNLFree = {
       address = ["10.2.0.2/32"];
       dns = ["10.2.0.1"];
       listenPort = 51820;
