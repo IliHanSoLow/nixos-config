@@ -3,7 +3,7 @@
     sopsFile = ../hosts/common/secrets/secrets.yaml;
     neededForUsers = true;
   };
-  networking.wireguard.interfaces = {
+  networking.wg-quick.interfaces = {
     NLFREE387043 = {
       ips = ["10.2.0.2/32"];
       dns = ["10.2.0.1"];
