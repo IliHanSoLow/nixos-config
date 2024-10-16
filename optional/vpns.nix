@@ -6,7 +6,7 @@
   networking.wireguard.interfaces = {
     NLFREE387043 = {
       ips = ["10.2.0.2/32"];
-      dns = ["10.2.0."];
+      dns = ["10.2.0.1"];
       listenPort = 51820;
       privateKeyFile = config.sops.secrets.NLFREE387043.path;
 
