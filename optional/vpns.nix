@@ -10,6 +10,7 @@
       dns = ["10.2.0."];
       listenPort = 51820;
       privateKey = "ext:NL-FREE387043";
+      privateKeyFile = config.sops.secrets.NLFREE387043.path;
 
       peers = [
         {
