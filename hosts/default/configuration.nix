@@ -318,6 +318,7 @@ in {
     nwg-look
     blesh
     age
+    ssh-to-age
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
