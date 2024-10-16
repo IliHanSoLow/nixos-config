@@ -44,6 +44,8 @@
     nixosConfigurations.hyprland = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
+        inputs.sops-nix.nixosModules.sops
+
         ./../hosts/default/configuration.nix
         #./../XNM1Hypr/
         # ./../XNM1Hypr/fingerprint-scanner.nix
@@ -104,8 +106,6 @@
           imports = [nur-no-pkgs.repos.iopq.modules.xraya];
           services.xraya.enable = true;
         })
-
-        inputs.sops-nix.nixosModules.sops
       ];
     };
   };
