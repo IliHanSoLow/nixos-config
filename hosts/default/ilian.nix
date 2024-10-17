@@ -130,6 +130,7 @@
       persepolis
       gf
       sops
+      openconnect
     ]
     ++ (
       with pkgs.nur; [
