@@ -320,6 +320,7 @@ in {
     blesh
     age
     ssh-to-age
+    yq
   ];
 
   nixpkgs.config.permittedInsecurePackages = [
