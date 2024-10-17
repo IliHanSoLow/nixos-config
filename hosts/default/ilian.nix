@@ -235,7 +235,8 @@
     };
   };
 
-  gtk = {
+  /*
+     gtk = {
     enable = true;
     theme = {
       name = "catppuccin-macchiato-teal-standard+default";
@@ -246,4 +247,5 @@
       };
     };
   };
+  */
 }
