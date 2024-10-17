@@ -6,7 +6,7 @@
     cpufetch
     starfetch
     octofetch
-    htop
+    htop-vim
     bottom
     kmon
 
