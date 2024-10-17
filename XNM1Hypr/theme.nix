@@ -14,7 +14,7 @@
   environment.defaultCursor.theme = "Catppuccin-Macchiato-Teal";
   qt.enable = true;
   qt.platformTheme = "qt5ct";
-  qt.style = "gtk3";
+  qt.style = "kvantum";
   console = {
     earlySetup = true;
     colors = [
@@ -57,6 +57,7 @@
     catppuccin-gtk
     catppuccin-kvantum
     catppuccin-cursors.macchiatoTeal
+    catppuccin-qt5ct
 
     # gnome.gnome-tweaks
     # gnome.gnome-shell
