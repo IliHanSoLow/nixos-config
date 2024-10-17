@@ -226,22 +226,24 @@
     extraConfig = builtins.readFile ./../../hypr/hyprland.conf;
   };
 
-  /*
   dconf.settings = {
-  "org/gnome/desktop/background" = {
-  picture-uri-dark = "file://${pkgs.nixos-artwork.wallpapers.nineish-dark-gray.src}";
-  };
-  "org/gnome/desktop/interface" = {
-  color-scheme = "prefer-dark";
-  };
+    "org/gnome/desktop/background" = {
+      picture-uri-dark = "file://${pkgs.nixos-artwork.wallpapers.nineish-dark-gray.src}";
+    };
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
   };
 
   gtk = {
-  enable = true;
-  theme = {
-  name = "Adwaita-dark";
-  package = pkgs.gnome.gnome-themes-extra;
+    enable = true;
+    theme = {
+      name = "catppuccin-macchiato-teal-standard+default";
+      package = pkgs.catppuccin-gtk.override {
+        accents = ["teal"];
+        size = "standard";
+        variant = "macchiato";
+      };
+    };
   };
-  };
-  */
 }
