@@ -131,7 +131,7 @@
       gf
       sops
       openconnect
-      lgoisim-evolution
+      logisim-evolution
     ]
     ++ (
       with pkgs.nur; [
