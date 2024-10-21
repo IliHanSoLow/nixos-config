@@ -132,6 +132,7 @@
       sops
       openconnect
       logisim-evolution
+      apvlv
     ]
     ++ (
       with pkgs.nur; [
