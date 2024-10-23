@@ -37,6 +37,8 @@
     podman-compose
     podman-tui
 
+    docker-compose
+
     # lazydocker
     # docker-credential-helpers
   ];
