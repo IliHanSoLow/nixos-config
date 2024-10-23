@@ -79,7 +79,7 @@
         # ./../XNM1Hypr/users.nix
         ./../XNM1Hypr/virtualisation.nix
         ./../XNM1Hypr/programming-languages.nix
-        # ./../XNM1Hypr/lsp.nix
+        ./../XNM1Hypr/lsp.nix
         ./../XNM1Hypr/rust.nix
         ./../XNM1Hypr/wasm.nix
         ./../XNM1Hypr/info-fetchers.nix
