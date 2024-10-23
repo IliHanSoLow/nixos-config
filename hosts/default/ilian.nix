@@ -132,6 +132,7 @@
       sops
       openconnect
       logisim-evolution
+      beekeeper-studio
     ]
     ++ (
       with pkgs.nur; [
