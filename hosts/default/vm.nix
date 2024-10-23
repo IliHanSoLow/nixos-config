@@ -7,7 +7,7 @@
   programs.dconf.enable = true;
 
   # Add user to libvirtd group
-  users.users.ilian.extraGroups = ["libvirtd"];
+  users.users.ilian.extraGroups = ["libvirtd" "docker"];
 
   # Install necessary packages
   environment.systemPackages = with pkgs; [

@@ -22,7 +22,6 @@
     };
     docker.enable = true;
   };
-  users.extraGroups.docker.members = ["ilian"];
 
   environment.systemPackages = with pkgs; [
     # nerdctl
