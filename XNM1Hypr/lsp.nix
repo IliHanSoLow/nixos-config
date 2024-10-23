@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   environment.systemPackages = with pkgs; [
     python311Packages.python-lsp-server
     nodePackages_latest.nodemon
@@ -10,8 +14,10 @@
     sumneko-lua-language-server
     marksman
     nil
+    nixd
     zls
     gopls
     delve
   ];
+  nix.nixPath = ["nixkpgs=${inputs.nixpkgs}"];
 }
