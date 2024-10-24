@@ -153,7 +153,7 @@
       ]
     )
     ++ (
-      with pkgs.inputs.nix-gaming.packages.${pkgs.system}; [
+      with inputs.nix-gaming.packages.${pkgs.system}; [
         osu-stable
       ]
     );
