@@ -151,6 +151,11 @@
         #   echo "Hello, ${config.home.username}!"
         # '')
       ]
+    )
+    ++ (
+      with pkgs.inputs.nix-gaming.packages.${pkgs.system}; [
+        osu-stable
+      ]
     );
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
