@@ -18,6 +18,8 @@
     zls
     gopls
     delve
+    cmake-language-server
+    htmx-lsp
   ];
   nix.nixPath = ["nixkpgs=${inputs.nixpkgs}"];
 }
