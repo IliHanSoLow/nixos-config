@@ -133,6 +133,7 @@
       openconnect
       logisim-evolution
       beekeeper-studio
+      noisetorch
     ]
     ++ (
       with pkgs.nur; [
