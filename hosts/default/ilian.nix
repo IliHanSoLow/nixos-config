@@ -136,7 +136,7 @@
     ]
     ++ (
       with pkgs.nur; [
-        pkgs.nur.repos.mic92.hello-nur
+        repos.mic92.hello-nur
 
         # # It is sometimes useful to fine-tune packages, for example, by applying
         # # overrides. You can do that directly here, just don't forget the
