@@ -26,11 +26,11 @@
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
-        ./../hosts/default/configuration.nix
+        ./hosts/default/configuration.nix
         inputs.home-manager.nixosModules.default
         #Lenovo Legion 5 15arh05h
         inputs.nixos-hardware.nixosModules.lenovo-legion-15arh05h
-        ./../hosts/default/theme.nix
+        ./hosts/default/theme.nix
         {nixpkgs.overlays = [nur.overlay];}
         ({pkgs, ...}: let
           nur-no-pkgs = import nur {
