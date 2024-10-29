@@ -349,6 +349,7 @@ in {
       xwayland.enable = true;
     };
     fish.enable = true;
+    zsh.enable = true;
     steam.enable = true;
     # openvpn3.enable = true;
   };
