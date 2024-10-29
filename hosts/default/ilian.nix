@@ -134,6 +134,7 @@
       logisim-evolution
       beekeeper-studio
       masterpdfeditor
+      darling
     ]
     ++ (
       with pkgs.nur; [
