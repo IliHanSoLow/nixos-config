@@ -13,5 +13,6 @@
     gmp
     nim
     nimble
+    fasm-bin
   ];
 }
