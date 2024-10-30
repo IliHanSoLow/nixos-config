@@ -134,6 +134,7 @@
       logisim-evolution
       beekeeper-studio
       masterpdfeditor
+      fg-virgil
     ]
     ++ (
       with pkgs.nur; [
