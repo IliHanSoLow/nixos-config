@@ -81,8 +81,8 @@
     gnumake
     gtklp
     hunspell
-    hunspellDicts.de_DE
-    hunspellDicts.en_US
+    hunspellDicts.de-DE
+    hunspellDicts.en-US
     hyphen
     i3lock
     inotify-tools
