@@ -36,120 +36,121 @@
   };
 
   environment.systemPackages = with pkgs; [
-    firefox
-    brave
-    kitty
-    thunderbird
-    ed
-    neovim
-    gh
-    btop
-    libgcc
-    gcc
-    glibc
-    lld
-    clang
-    clang-tools
-    gnumake
-    cmake
-    tmux
-    obsidian
-    fzf
-    fd
+    home-manager
+    # peazip
+    acpi
+    acpid
+    age
+    alacritty
+    alejandra
+    any-nix-shell
+    appimage-run
+    appimagekit
+    arandr
+    arc-icon-theme
+    atuin
+    audacious
     bat
     bat-extras.batgrep
-    bat-extras.batpipe
     bat-extras.batman
-    ripgrep
-    xclip
-    alejandra
-    unzip
-    wget
-    tree-sitter
-    atuin
-    dunst
-    libnotify
+    bat-extras.batpipe
+    bc
+    blesh
     blueman
-    lshw
-    lm_sensors
-    swww
-    nuspell
-    hyphen
-    hunspell
-    hunspellDicts.en_US
-    hunspellDicts.de_DE
-    audacious
-    lollypop
-    tmux-sessionizer
-    networkmanagerapplet
-    networkmanager_dmenu
+    brave
+    btop
+    cbatticon
+    clang
+    clang-tools
+    cmake
     dmenu-bluetooth
-    neovide
-    # peazip
-    vivid
-    any-nix-shell
-    file
-    pavucontrol
+    dunst
     easyeffects
-    qjackctl
-    luajitPackages.luadbi
-    acpid
-    fortune
-    redshift
-    mpd
-    mpc-cli
-    mpc-qt
-    maim
+    ed
+    emacs
+    fd
     feh
-    inotify-tools
-    xdotool
-    libsForQt5.qtstyleplugin-kvantum
-    libsForQt5.qt5ct
-    openssl
+    file
+    firefox
+    flameshot
+    fortune
+    fzf
+    gcc
+    gh
+    glibc
+    gnumake
     gtklp
+    hunspell
+    hunspellDicts.de_DE
+    hunspellDicts.en_US
+    hyphen
+    i3lock
+    inotify-tools
+    kdePackages.partitionmanager
+    kitty
+    libgcc
+    libnotify
+    libsForQt5.qt5ct
+    libsForQt5.qtstyleplugin-kvantum
+    lld
+    lm_sensors
+    lollypop
+    lshw
+    luajitPackages.luadbi
+    maim
     man-pages
     man-pages-posix
-    parallel
-    appimagekit
-    appimage-run
-    xorg.xorgserver
-    xorg.xf86inputevdev
-    xorg.xf86inputsynaptics
-    xorg.xf86inputlibinput
-    xorg.xf86videointel
-    xorg.xf86videoati
-    xorg.xf86videonouveau
-    xorg.libX11
-    xorg.libXft
-    xorg.libXcursor
-    xorg.libXcomposite
-    xorg.libXinerama
-    xorg.xinit
-    arandr
-    wdisplays
+    mpc-cli
+    mpc-qt
+    mpd
+    neovide
+    neovim
+    networkmanager_dmenu
+    networkmanagerapplet
     nitrogen
-    alacritty
-    acpi
-    arc-icon-theme
-    bc
-    cbatticon
-    xautolock
-    i3lock
-    xss-lock
     numlockx
-    flameshot
-    emacs
-    p7zip
-    kdePackages.partitionmanager
+    nuspell
     nwg-look
-    blesh
-    age
-    ssh-to-age
-    yq
-    vulkan-tools
-    winetricks
-    wineWowPackages.waylandFull
-    vlc
+    obsidian
+    openssl
+    p7zip
+    parallel
+    pavucontrol
+    qjackctl
+    redshift
+    ripgrep
     sops
+    ssh-to-age
+    swww
+    thunderbird
+    tmux
+    tmux-sessionizer
+    tree-sitter
+    unzip
+    vivid
+    vlc
+    vulkan-tools
+    wdisplays
+    wget
+    wineWowPackages.waylandFull
+    winetricks
+    xautolock
+    xclip
+    xdotool
+    xorg.libX11
+    xorg.libXcomposite
+    xorg.libXcursor
+    xorg.libXft
+    xorg.libXinerama
+    xorg.xf86inputevdev
+    xorg.xf86inputlibinput
+    xorg.xf86inputsynaptics
+    xorg.xf86videoati
+    xorg.xf86videointel
+    xorg.xf86videonouveau
+    xorg.xinit
+    xorg.xorgserver
+    xss-lock
+    yq
   ];
 }
