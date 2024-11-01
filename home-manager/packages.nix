@@ -8,7 +8,7 @@
       # cutter
       # element
       # element-desktop
-      tartube
+      # tartube
       anki
       arduino
       beekeeper-studio
