@@ -14,6 +14,7 @@
 
 # cd to your config dir
 pushd ~/dotfiles/nixos/
+export PATH=$HOME/.nix-profile/bin:$PATH
 
 # Edit your config
 $EDITOR ./home-manager/home.nix
