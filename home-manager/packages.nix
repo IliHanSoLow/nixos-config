@@ -8,7 +8,7 @@
       # cutter
       # element
       # element-desktop
-      # tartube
+      tartube
       anki
       arduino
       beekeeper-studio
@@ -52,7 +52,7 @@
       loupe
       lutris
       masterpdfeditor
-      media-downloader
+      # media-downloader
       (
         ncmpcpp.override
         {visualizerSupport = true;}
