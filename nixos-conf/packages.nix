@@ -15,6 +15,7 @@
   programs = {
     neovim = {
       enable = true;
+	  package = pkgs.unstable.neovim;
       defaultEditor = true;
     };
     hyprland = {
@@ -91,7 +92,7 @@
     libsForQt5.qtstyleplugin-kvantum
     lld
     lm_sensors
-    lollypop
+    # lollypop
     lshw
     luajitPackages.luadbi
     maim
@@ -101,7 +102,6 @@
     mpc-qt
     mpd
     neovide
-    neovim
     networkmanager_dmenu
     networkmanagerapplet
     nitrogen
