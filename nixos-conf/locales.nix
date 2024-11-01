@@ -33,8 +33,8 @@
     nuspell
     hyphen
     hunspell
-    hunspellDicts.en_US
-    hunspellDicts.uk_UA
+    hunspellDicts.en_us
+    hunspellDicts.uk_us
     hunspellDicts.de_de
   ];
 }
