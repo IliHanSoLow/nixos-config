@@ -36,7 +36,7 @@
     ./info-fetchers.nix
     ./terminal-utilities.nix
     ./cursor-theme.nix
-	./auto-upgrade.nix
+    ./auto-upgrade.nix
     inputs.sops-nix.nixosModules.sops
 
     # Import your generated (nixos-generate-config) hardware configuration
