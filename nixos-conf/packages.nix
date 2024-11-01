@@ -13,11 +13,13 @@
   };
 
   programs = {
-    neovim = {
+    /*
+       neovim = {
       enable = true;
       package = pkgs.unstable.neovim;
       defaultEditor = true;
     };
+    */
     hyprland = {
       enable = true;
       xwayland.enable = true;
@@ -37,6 +39,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    unstable.neovim
     home-manager
     # peazip
     acpi
