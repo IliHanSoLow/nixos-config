@@ -34,7 +34,7 @@
     hyphen
     hunspell
     hunspellDicts.en_US
-    hunspellDicts.uk_AU
+    hunspellDicts.uk_UA
     hunspellDicts.de_DE
   ];
 }
