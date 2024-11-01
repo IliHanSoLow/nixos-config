@@ -16,7 +16,7 @@
 pushd ~/dotfiles/nixos/
 
 # Edit your config
-$EDITOR ./hosts/default/ilian.nix
+$EDITOR ./home-manager/home.nix
 
 # Autoformat your nix files
 alejandra . >/dev/null
@@ -28,18 +28,24 @@ echo "NixOS Rebuilding..."
 
 # Rebuild, output simplified errors, log trackebacks
 # sudo nixos-rebuild switch --flake /home/ilian/dotfiles/nixos/nixos/#default &>nixos-switch.log || (cat nixos-switch.log | grep --color error && false)
-read -p "Do you want to fully-update? (y/b/r/N): " answer
+read -p "Do you want to fully-update? (y/b/r/f/N): " answer
 
 if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
 nix flake update
-sudo nixos-rebuild switch --flake /home/ilian/dotfiles/nixos#hyprland
+sudo nixos-rebuild switch --flake /home/ilian/dotfiles/nixos#legionOfNix
+home-manager switch --flake /home/ilian/dotfiles/nixos#ilian@legionOfNix
 elif [[ "$answer" == "b" || "$answer" == "boot" ]]; then
 nix flake update
-sudo nixos-rebuild boot --flake /home/ilian/dotfiles/nixos#hyprland
+sudo nixos-rebuild boot --flake /home/ilian/dotfiles/nixos#legionOfNix
+home-manager switch --flake /home/ilian/dotfiles/nixos#ilian@legionOfNix
 elif [[ "$answer" == "r" || "$answer" == "reboot" ]]; then
-sudo nixos-rebuild boot --flake /home/ilian/dotfiles/nixos/#hyprland
-else 
-sudo nixos-rebuild switch --flake /home/ilian/dotfiles/nixos/#hyprland
+sudo nixos-rebuild boot --flake /home/ilian/dotfiles/nixos/#legionOfNix
+home-manager switch --flake /home/ilian/dotfiles/nixos#ilian@legionOfNix
+elif [[ "$answer" == "f" ||  "$answer" == "full" ]]; then
+sudo nixos-rebuild switch --flake /home/ilian/dotfiles/nixos/#legionOfNix
+home-manager switch --flake /home/ilian/dotfiles/nixos#ilian@legionOfNix
+else
+home-manager switch --flake /home/ilian/dotfiles/nixos#ilian@legionOfNix
 fi
 
 # Get current generation metadata
