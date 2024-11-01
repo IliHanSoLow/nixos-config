@@ -23,7 +23,13 @@
       cmatrix
       dfu-programmer
       direnv
-      discord
+      (
+        discord.override
+        {
+          withOpenASAR = true;
+          withTTS = true;
+        }
+      )
       emote
       ffmpeg
       fg-virgil
