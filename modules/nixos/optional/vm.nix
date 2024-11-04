@@ -46,7 +46,7 @@
     spice-protocol
     win-virtio
     win-spice
-    adwaita-icon-theme
+    adwaita-icon-theme-legacy
     qemu
     qemu_kvm
     distrobox
