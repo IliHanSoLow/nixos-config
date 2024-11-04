@@ -38,6 +38,7 @@
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
 
     overlays = import ./overlays {inherit inputs;};
+    nixosModules = import ./modules/nixos;
     homeManagerModules = import ./modules/home-manager;
 
     nixosConfigurations = {
@@ -62,6 +63,8 @@
         modules = [
           # > Our main home-manager configuration file <
           ./home-manager/home.nix
+          vpn-module
+          vm-module
         ];
       };
     };

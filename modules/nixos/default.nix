@@ -3,6 +3,6 @@
 {
   # List your module files here
   # my-module = import ./my-module.nix;
-  vm-module = import ./optional/vm.nix;
-  vpn-module = import ./optional/vpns.nix;
+  vms-mod = import ./optional/vm.nix;
+  vpn-mod = import ./optional/vpns.nix;
 }
