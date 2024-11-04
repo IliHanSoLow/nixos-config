@@ -19,6 +19,10 @@
     ];
   };
 
+  # BSPWM WM
+  services.xserver.windowManager.bspwm.enable = true;
+  services.xserver.windowManager.ratpoison.enable = true;
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "eu, de";
