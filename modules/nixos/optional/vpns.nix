@@ -4,7 +4,7 @@
   ...
 }: {
   sops.secrets.NLFREE387043 = {
-    sopsFile = ../hosts/common/secrets/secrets.yaml;
+    sopsFile = ../../../secrets/secrets.yaml;
     neededForUsers = true;
   };
 
