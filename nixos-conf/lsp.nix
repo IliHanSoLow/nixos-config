@@ -14,7 +14,7 @@
     sumneko-lua-language-server
     marksman
     nil
-    nixd
+    unstable.nixd
     zls
     gopls
     delve
