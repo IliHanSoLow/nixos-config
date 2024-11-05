@@ -69,6 +69,8 @@
 
     starship
 
+    polybar
+
     picom-pijulius
     qutebrowser
     zathura
