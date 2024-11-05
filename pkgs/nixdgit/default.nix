@@ -2,7 +2,7 @@
   nixd = pkgs.fetchFromGitHub {
     owner = "nix-community";
     repo = "nixd";
-    rev = "release/2.x"; # or specify a specific commit hash
+    rev = "2.4.0"; # or specify a specific commit hash
     src = ./.;
   };
 in
