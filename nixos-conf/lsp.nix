@@ -14,7 +14,7 @@
     sumneko-lua-language-server
     marksman
     nil
-    nixdgit
+    nixd
     zls
     gopls
     delve
