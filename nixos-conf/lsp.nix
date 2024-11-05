@@ -14,8 +14,8 @@
     sumneko-lua-language-server
     marksman
     nil
-    unstable.nixd
     zls
+    inputs.nixd.defaultPackage.x86_64-linux
     gopls
     delve
     cmake-language-server
