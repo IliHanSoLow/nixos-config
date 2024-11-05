@@ -14,7 +14,6 @@
 
     sops-nix.url = "github:Mic92/sops-nix";
     nix-gaming.url = "github:fufexan/nix-gaming";
-    nixd.url = "github:nix-community/nixd";
   };
 
   outputs = {

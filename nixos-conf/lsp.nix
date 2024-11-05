@@ -15,8 +15,8 @@
     marksman
     nil
     zls
-    inputs.nixd.defaultPackage.x86_64-linux
     gopls
+    nixd
     delve
     cmake-language-server
     htmx-lsp

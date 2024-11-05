@@ -34,20 +34,16 @@ read -p "Do you want to fully-update? (y/b/r/f/N): " answer
 if [[ "$answer" == "y" || "$answer" == "yes" ]]; then
 nix flake update
 sudo nixos-rebuild switch --flake /home/ilian/dotfiles/nixos#legionOfNix
-hbar
 home-manager switch --flake /home/ilian/dotfiles/nixos#ilian@legionOfNix
 elif [[ "$answer" == "b" || "$answer" == "boot" ]]; then
 nix flake update
 sudo nixos-rebuild boot --flake /home/ilian/dotfiles/nixos#legionOfNix
-hbar
 home-manager switch --flake /home/ilian/dotfiles/nixos#ilian@legionOfNix
 elif [[ "$answer" == "r" || "$answer" == "reboot" ]]; then
 sudo nixos-rebuild boot --flake /home/ilian/dotfiles/nixos/#legionOfNix
-hbar
 home-manager switch --flake /home/ilian/dotfiles/nixos#ilian@legionOfNix
 elif [[ "$answer" == "f" ||  "$answer" == "full" ]]; then
 sudo nixos-rebuild switch --flake /home/ilian/dotfiles/nixos/#legionOfNix
-hbar
 home-manager switch --flake /home/ilian/dotfiles/nixos#ilian@legionOfNix
 else
 home-manager switch --flake /home/ilian/dotfiles/nixos#ilian@legionOfNix
