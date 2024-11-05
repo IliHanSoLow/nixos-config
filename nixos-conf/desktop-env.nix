@@ -71,7 +71,8 @@
     polybar
     sxhkd
 
-    picom-pijulius
+    # picom-pijulius
+    picom
     qutebrowser
     zathura
     mpv
