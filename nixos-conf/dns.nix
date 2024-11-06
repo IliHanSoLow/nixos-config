@@ -7,8 +7,10 @@
     # resolvconf.enable = true;
 
     # If using dhcpcd:
-    dhcpcd.extraConfig = "nohook resolv.conf";
+    # dhcpcd.extraConfig = "nohook resolv.conf";
+    dhcpcd.extraConfig = "systemd-resolved";
     # If using NetworkManager:
+    # networkmanager.dns = "none";
     networkmanager.dns = "systemd-resolved";
   };
 
