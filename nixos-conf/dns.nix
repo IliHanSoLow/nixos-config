@@ -4,7 +4,7 @@
     nameservers = ["127.0.0.1" "::1"];
 
     # Allow systemd-resolved to handle DNS fallback
-    dns.resolvconf = true;
+    # resolvconf.enable = true;
 
     # If using dhcpcd:
     dhcpcd.extraConfig = "nohook resolv.conf";
