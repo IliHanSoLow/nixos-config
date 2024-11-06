@@ -18,25 +18,26 @@
     # inputs.hardware.nixosModules.common-ssd
 
     # You can also split up your configuration and import pieces of it here:
-    ./sound.nix
-    ./locales.nix
-    ./desktop-env.nix
+    ./auto-upgrade.nix
     ./bluetooth.nix
-    ./packages.nix
-    ./printer.nix
-    ./screen.nix
-    ./theme.nix
-    ./fonts.nix
-    ./security-services.nix
-    ./services.nix
+    ./cursor-theme.nix
+    ./desktop-env.nix
+    ./dns.nix
     ./envvars.nix
     ./firewall.nix
-    ./programming-langs.nix
-    ./lsp.nix
+    ./fonts.nix
     ./info-fetchers.nix
+    ./locales.nix
+    ./lsp.nix
+    ./packages.nix
+    ./printer.nix
+    ./programming-langs.nix
+    ./screen.nix
+    ./security-services.nix
+    ./services.nix
+    ./sound.nix
     ./terminal-utilities.nix
-    ./cursor-theme.nix
-    ./auto-upgrade.nix
+    ./theme.nix
     inputs.sops-nix.nixosModules.sops
 
     # Import your generated (nixos-generate-config) hardware configuration
