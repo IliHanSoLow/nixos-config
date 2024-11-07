@@ -35,7 +35,7 @@
     };
     spiceUSBRedirection.enable = true;
   };
-  services.spice-vdagentd.enable = true;
+  services.spice-webdavd.enable = true;
 
   # Install necessary packages
   environment.systemPackages = with pkgs; [
