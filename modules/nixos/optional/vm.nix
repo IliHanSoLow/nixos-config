@@ -39,22 +39,25 @@
 
   # Install necessary packages
   environment.systemPackages = with pkgs; [
-    virt-manager
-    virt-viewer
+    # docker-credential-helpers qemu_kvm
+    # firecracker
+    # firectl
+    # flintlock
+    # lazydocker
+    adwaita-icon-theme-legacy
+    distrobox
+    docker-compose
+    podman-compose
+    podman-tui
+    qemu
+    qemu_kvm
     spice
     spice-gtk
     spice-protocol
-    win-virtio
+    virt-manager
+    virt-viewer
     win-spice
-    adwaita-icon-theme-legacy
-    qemu
-    qemu_kvm
-    distrobox
-    qemu
-
-    podman-compose
-    podman-tui
-
-    docker-compose
+    win-virtio
+    # nerdctl
   ];
 }
