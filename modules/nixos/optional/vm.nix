@@ -37,6 +37,21 @@
   };
   services.spice-webdavd.enable = true;
 
+  services.davfs2 = {
+    enable = true;
+    extraConfig = ''
+      ask_auth 0
+    '';
+  };
+
+  fileSystems = {
+    "/bigssd/VM_shared/" = {
+      device = "http://localhost:9843/vm_shared";
+      fsType = "davfs";
+      options = ["nofail"];
+    };
+  };
+
   # Install necessary packages
   environment.systemPackages = with pkgs; [
     # docker-credential-helpers qemu_kvm
