@@ -28,6 +28,7 @@
     zsh.enable = true;
     steam.enable = true;
     # openvpn3.enable = true;
+    noisetorch.enable = true;
   };
 
   nix.settings.auto-optimise-store = true;
