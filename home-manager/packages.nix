@@ -69,6 +69,7 @@
       openconnect
       persepolis
       piper
+      platformio
       prettierd
       protonvpn-gui
       qmk
