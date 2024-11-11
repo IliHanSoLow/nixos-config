@@ -83,6 +83,7 @@
       teamspeak_client
       thefuck
       themechanger
+      tor-browser
       tree
       unipicker
       ventoy-full
