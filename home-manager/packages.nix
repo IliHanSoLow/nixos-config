@@ -31,6 +31,7 @@
         }
       )
       emote
+      factorio_2
       ffmpeg
       fg-virgil
       figlet

@@ -70,6 +70,7 @@
 
     polybar
     sxhkd
+    tdrop
 
     # picom-pijulius
     picom
