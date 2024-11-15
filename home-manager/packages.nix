@@ -15,6 +15,7 @@
       black
       bluez
       bluez-tools
+      burpsuite
       cachix
       calc
       calibre
