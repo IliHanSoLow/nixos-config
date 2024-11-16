@@ -32,6 +32,7 @@
     ./packages.nix
     ./printer.nix
     ./programming-langs.nix
+    ./rust.nix
     ./screen.nix
     ./security-services.nix
     ./services.nix

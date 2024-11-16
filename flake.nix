@@ -14,6 +14,7 @@
 
     sops-nix.url = "github:Mic92/sops-nix";
     nix-gaming.url = "github:fufexan/nix-gaming";
+    rust-overlay.url = "github:oxalica/rust-overlay";
   };
 
   outputs = {
