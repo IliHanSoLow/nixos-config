@@ -60,6 +60,7 @@
       lutris
       masterpdfeditor
       # media-downloader
+      minecraft
       (
         ncmpcpp.override
         {visualizerSupport = true;}
@@ -68,6 +69,7 @@
       nmap
       obs-studio
       openconnect
+      unstable.optifinePackages.optifine_1_21_1
       persepolis
       piper
       platformio
