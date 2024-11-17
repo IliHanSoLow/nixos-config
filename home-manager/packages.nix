@@ -60,7 +60,6 @@
       lutris
       masterpdfeditor
       # media-downloader
-      unstable.minecraft
       (
         ncmpcpp.override
         {visualizerSupport = true;}
@@ -74,6 +73,7 @@
       piper
       platformio
       prettierd
+      prismlauncher
       protonvpn-gui
       qmk
       rawtherapee
