@@ -60,7 +60,7 @@
       lutris
       masterpdfeditor
       # media-downloader
-      minecraft
+      unstable.minecraft
       (
         ncmpcpp.override
         {visualizerSupport = true;}
