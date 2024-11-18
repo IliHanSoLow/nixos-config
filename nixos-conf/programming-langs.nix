@@ -19,6 +19,7 @@
     bear
     gradle
     maven
+    sqlite
 
     # WASM
     wasmedge
