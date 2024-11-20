@@ -10,6 +10,8 @@
 }: {
   # You can import other home-manager modules here
   imports = [
+    ./gaming.nix
+    ./programming.nix
     ./hyprland.nix
     ./packages.nix
     ./services.nix
