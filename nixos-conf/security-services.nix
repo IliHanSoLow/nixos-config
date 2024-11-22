@@ -59,12 +59,12 @@
         profile = "${pkgs.firejail}/etc/firejail/signal-desktop.profile";
         extraArgs = ["--env=GTK_THEME=Adwaita:dark"];
       };
-      /*
-         firefox = {
-      	executable = "${pkgs.firefox}/bin/firefox";
-
+      firefox = {
+        executable = "${pkgs.firefox}/bin/firefox";
       };
-      */
+      brave = {
+        executable = "${pkgs.firefox}/bin/brave";
+      };
     };
   };
 
