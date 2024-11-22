@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -32,8 +36,7 @@
     updater.frequency = 12;
   };
 
-  /*
-     programs.firejail = {
+  programs.firejail = {
     enable = true;
     wrappedBinaries = {
       mpv = {
@@ -51,9 +54,19 @@
       discord = {
         executable = "${lib.getBin pkgs.discord}/bin/discord";
       };
+      signal-desktop = {
+        executable = "${pkgs.signal-desktop}/bin/signal-desktop --enable-features=UseOzonePlatform --ozone-platform=wayland";
+        profile = "${pkgs.firejail}/etc/firejail/signal-desktop.profile";
+        extraArgs = ["--env=GTK_THEME=Adwaita:dark"];
+      };
+      /*
+         firefox = {
+      	executable = "${pkgs.firefox}/bin/firefox";
+
+      };
+      */
     };
   };
-  */
 
   environment.systemPackages = with pkgs; [
     vulnix #scan command: vulnix --system
