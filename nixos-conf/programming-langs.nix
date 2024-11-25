@@ -19,7 +19,7 @@
     bear
     gradle
     maven
-    sqlite
+    unstable.sqlite
 
     # WASM
     wasmedge
