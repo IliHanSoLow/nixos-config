@@ -73,6 +73,7 @@
     ventoy-full
     webcord
     weechat
+    weechatScripts.weechat-matrix
     xournalpp
     yazi
     yt-dlp
