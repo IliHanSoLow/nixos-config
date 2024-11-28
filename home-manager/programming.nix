@@ -26,5 +26,6 @@
     glew
     xorg.libXrandr
     doxygen
+    universal-ctags
   ];
 }
