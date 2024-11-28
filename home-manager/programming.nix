@@ -24,5 +24,7 @@
     vscodium
     glfw
     glew
+    xorg.libXrandr
+    doxygen
   ];
 }
