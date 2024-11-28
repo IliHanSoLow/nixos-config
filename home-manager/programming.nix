@@ -22,5 +22,7 @@
     qmk
     stylua
     vscodium
+    glfw
+    glew
   ];
 }
