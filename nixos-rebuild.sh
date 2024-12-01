@@ -40,11 +40,11 @@ elif [[ "$answer" == "b" || "$answer" == "boot" ]]; then
 nix flake update
 sudo nixos-rebuild boot --flake /home/ilian/dotfiles/nixos#legionOfNix
 echo "------------------------"
-home-manager switch --flake /home/ilian/dotfiles/nixos#ilian@legionOfNix
+home-manager boot --flake /home/ilian/dotfiles/nixos#ilian@legionOfNix
 elif [[ "$answer" == "r" || "$answer" == "reboot" ]]; then
 sudo nixos-rebuild boot --flake /home/ilian/dotfiles/nixos/#legionOfNix
 echo "------------------------"
-home-manager switch --flake /home/ilian/dotfiles/nixos#ilian@legionOfNix
+home-manager boot --flake /home/ilian/dotfiles/nixos#ilian@legionOfNix
 elif [[ "$answer" == "f" ||  "$answer" == "full" ]]; then
 sudo nixos-rebuild switch --flake /home/ilian/dotfiles/nixos/#legionOfNix
 echo "------------------------"
