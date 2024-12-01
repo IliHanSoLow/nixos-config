@@ -15,6 +15,8 @@
     nimble
     fasm-bin
     typst
+    typstfmt
+    typst-lsp
     godot_4
     bear
     gradle
