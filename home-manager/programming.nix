@@ -13,7 +13,7 @@
     gdb
     gf
     ghidra
-    jetbrains.clion
+    unstable.jetbrains.clion
     jetbrains.idea-ultimate
     jq
     nmap
