@@ -10,7 +10,7 @@
     xh
     tgpt
     # mcfly # terminal history
-    zellij
+    unstable.zellij
     progress
     noti
     topgrade
