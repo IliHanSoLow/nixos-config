@@ -27,5 +27,6 @@
     xorg.libXrandr
     doxygen
     universal-ctags
+    python312Packages.pygments
   ];
 }
