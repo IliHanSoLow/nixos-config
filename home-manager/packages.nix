@@ -52,6 +52,7 @@
       {visualizerSupport = true;}
     )
     nextcloud-client
+    nix-du
     obs-studio
     openconnect
     persepolis
