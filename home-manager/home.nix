@@ -56,6 +56,14 @@
     };
   };
 
+  home.pointerCursor.x11.enable = true;
+  home.pointerCursor = {
+    name = "phinger-cursors";
+    package = pkgs.phinger-cursors;
+    size = 48;
+    gtk.enable = true;
+  };
+
   # Enable home-manager and git
   programs.home-manager.enable = true;
   programs.git.enable = true;

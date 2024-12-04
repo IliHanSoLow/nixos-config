@@ -56,6 +56,7 @@
     obs-studio
     openconnect
     persepolis
+    phinger-cursors
     piper
     prismlauncher
     protonvpn-gui
