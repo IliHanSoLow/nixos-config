@@ -57,6 +57,7 @@
   };
 
   home.pointerCursor.x11.enable = true;
+  home.pointerCursor.x11.defaultCursor = "phinger-cursors";
   home.pointerCursor = {
     name = "phinger-cursors";
     package = pkgs.phinger-cursors;
