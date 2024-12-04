@@ -21,7 +21,7 @@ in {
     environment.defaultCursor = {
       enable = mkOption {
         type = types.bool;
-        default = false;
+        default = true;
         description = ''
           Whether to set a default cursor theme for graphical environments.
         '';
@@ -29,7 +29,7 @@ in {
 
       theme = mkOption {
         type = types.str;
-        default = "";
+        default = "phinger-cursors";
         example = "Adwaita";
         description = "The name of the defualt cursor theme.";
       };
