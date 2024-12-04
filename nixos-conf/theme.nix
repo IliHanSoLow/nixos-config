@@ -7,7 +7,7 @@
   # environment.variables.XCURSOR_THEME = "Catppuccin-Macchiato-Teal";
   # environment.variables.XCURSOR_SIZE = "24";
   environment.defaultCursor.enable = true;
-  environment.defaultCursor.theme = "Catppuccin-Macchiato-Teal";
+  environment.defaultCursor.theme = "phinger-cursor";
   qt.enable = true;
   qt.platformTheme = "qt5ct";
   qt.style = "kvantum";
