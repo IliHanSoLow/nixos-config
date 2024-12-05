@@ -92,11 +92,12 @@
   };
 
   boot = {
-    loader.systemd-boot.enable = true;
-    loader.efi.canTouchEfiVariables = true;
-    loader.timeout = 4;
+    cleanTmpDir = true;
     initrd.enable = true;
     initrd.systemd.enable = true;
+    loader.efi.canTouchEfiVariables = true;
+    loader.systemd-boot.enable = true;
+    loader.timeout = 4;
     supportedFilesystems = ["ntfs"];
   };
   # boot.plymouth = {
