@@ -15,12 +15,18 @@
     sops-nix.url = "github:Mic92/sops-nix";
     nix-gaming.url = "github:fufexan/nix-gaming";
     rust-overlay.url = "github:oxalica/rust-overlay";
+
+    lanzaboote = {
+      url = "github:nix-community/lanzaboote/v0.4.1";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     self,
     nixpkgs,
     home-manager,
+    lanzaboote,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -51,6 +57,7 @@
 
           inputs.home-manager.nixosModules.default
           inputs.nixos-hardware.nixosModules.lenovo-legion-15arh05h
+          lanzaboote.nixosModules.lanzaboote
         ];
       };
     };

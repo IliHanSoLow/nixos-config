@@ -96,7 +96,11 @@
     initrd.enable = true;
     initrd.systemd.enable = true;
     loader.efi.canTouchEfiVariables = true;
-    loader.systemd-boot.enable = true;
+    loader.systemd-boot.enable = lib.mkForce false;
+    lanzaboote = {
+      enable = true;
+      pkiBundle = "/etc/secureboot";
+    };
     loader.timeout = 4;
     supportedFilesystems = ["ntfs"];
   };
