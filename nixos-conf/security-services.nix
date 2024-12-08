@@ -81,6 +81,7 @@
     passExtensions.pass-otp
     passExtensions.pass-import
     passExtensions.pass-audit
+    sbctl
     tomb
   ];
 }
