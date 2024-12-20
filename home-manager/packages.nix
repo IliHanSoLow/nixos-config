@@ -46,7 +46,6 @@
     loupe
     lutris
     masterpdfeditor
-    maliit-keyboard
     # media-downloader
     (
       ncmpcpp.override
