@@ -147,7 +147,6 @@
     xorg.xf86inputlibinput
     xorg.xf86inputsynaptics
     xorg.xf86videoati
-    xorg.xf86videointel
     xorg.xf86videonouveau
     xorg.xinit
     xorg.xorgserver

@@ -22,6 +22,7 @@
     gradle
     maven
     unstable.sqlite
+    elixir
 
     # WASM
     wasmedge
