@@ -25,6 +25,7 @@
     glfw
     glew
     xorg.libXrandr
+    autorandr
     doxygen
     universal-ctags
     python312Packages.pygments
