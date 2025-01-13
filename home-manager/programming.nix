@@ -5,6 +5,7 @@
 }: {
   home.packages = with pkgs; [
     arduino
+    aseprite
     beekeeper-studio
     black
     burpsuite
