@@ -77,7 +77,7 @@
     weechat
     xournalpp
     yazi
-    yt-dlp
+    unstable.yt-dlp
     zapzap
     zoxide
   ];
