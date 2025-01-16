@@ -101,6 +101,12 @@
       enable = true;
       pkiBundle = "/etc/secureboot";
     };
+    kernelParams = [
+      "nvidia.NVreg_RegistryDwords=EnableBrightnessControl=1"
+      "quiet"
+      "splash"
+      # "amdgpu.backlight=0"
+    ];
     loader.timeout = 4;
     supportedFilesystems = ["ntfs"];
   };
@@ -116,8 +122,6 @@
     fsType = "ntfs-3g";
     options = ["rw" "uid=1000" "defaults" "noatime" "nofail"];
   };
-
-  boot.kernelParams = ["quiet" "splash" "amdgpu.backlight=0"];
 
   #CPU Power save
   services.power-profiles-daemon.enable = false; #Disable GNOME PowerProfile
