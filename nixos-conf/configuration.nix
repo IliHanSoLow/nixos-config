@@ -105,7 +105,7 @@
       "nvidia.NVreg_RegistryDwords=EnableBrightnessControl=1"
       "quiet"
       "splash"
-      # "amdgpu.backlight=0"
+      "amdgpu.backlight=0"
     ];
     loader.timeout = 4;
     supportedFilesystems = ["ntfs"];
