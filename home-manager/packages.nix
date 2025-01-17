@@ -24,6 +24,7 @@
         withTTS = true;
       }
     )
+    dropbox
     emote
     ffmpeg
     fg-virgil
