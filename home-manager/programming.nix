@@ -6,6 +6,7 @@
   home.packages = with pkgs; [
     arduino
     aseprite
+    basedpyright
     beekeeper-studio
     black
     burpsuite

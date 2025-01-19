@@ -4,7 +4,6 @@
   ...
 }: {
   environment.systemPackages = with pkgs; [
-    basedpyright
     python312Packages.python-lsp-server
     nodePackages_latest.nodemon
     nodePackages_latest.typescript
