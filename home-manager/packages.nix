@@ -34,6 +34,7 @@
     gthumb
     gzdoom
     halloy
+    imagemagick
     inetutils
     inkscape
     isort
