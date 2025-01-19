@@ -35,6 +35,7 @@
     gzdoom
     halloy
     inetutils
+    inkscape
     isort
     jdk21
     kdePackages.kcalc
