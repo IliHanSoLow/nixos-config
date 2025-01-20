@@ -131,9 +131,11 @@
   #fuck you NVIDIA
   hardware.graphics = {
     enable = true;
-    enable32Bit = true;
   };
-  services.xserver.videoDrivers = ["nvidia"];
+
+  /*
+    services.xserver.videoDrivers = ["nvidia"];
+
   hardware.nvidia = {
     # Modesetting is required.
     modesetting.enable = true;
@@ -162,8 +164,9 @@
     nvidiaSettings = true;
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
+  */
 
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
