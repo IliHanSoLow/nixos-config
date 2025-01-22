@@ -92,7 +92,7 @@
   };
 
   boot = {
-    cleanTmpDir = true;
+    tmp.cleanOnBoot = true;
     initrd.enable = true;
     initrd.systemd.enable = true;
     loader.efi.canTouchEfiVariables = true;

@@ -6,7 +6,7 @@
   services.xserver.displayManager = {
     gdm = {
       enable = false;
-      wayland = false;
+      wayland = true;
     };
     startx.enable = true;
   };
