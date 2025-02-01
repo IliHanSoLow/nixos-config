@@ -45,6 +45,7 @@
     # flintlock
     # lazydocker
     adwaita-icon-theme-legacy
+    devpod
     distrobox
     docker-compose
     podman-compose
