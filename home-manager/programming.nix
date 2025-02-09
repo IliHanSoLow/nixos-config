@@ -10,6 +10,7 @@
     beekeeper-studio
     black
     burpsuite
+    cscope
     dfu-programmer
     direnv
     gdb
