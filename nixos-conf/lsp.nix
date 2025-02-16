@@ -11,16 +11,17 @@
     nodePackages_latest.vscode-langservers-extracted
     nodePackages_latest.yaml-language-server
     nodePackages_latest.dockerfile-language-server-nodejs
-    sumneko-lua-language-server
-    marksman
-    nil
-    zls
-    gopls
-    nixd
-    delve
     cmake-language-server
+    delve
+    gopls
     htmx-lsp
     jdt-language-server
+    marksman
+    nil
+    nixd
+    sumneko-lua-language-server
+    tinymist
+    zls
   ];
   nix.nixPath = ["nixkpgs=${inputs.nixpkgs}"];
 }
