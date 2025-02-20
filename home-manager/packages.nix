@@ -16,6 +16,7 @@
     calibre
     cbonsai
     chatterino2
+    chromium
     cmatrix
     (
       discord.override
