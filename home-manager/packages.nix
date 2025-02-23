@@ -9,6 +9,7 @@
     # element-desktop
     # tartube
     anki
+    ani-cli
     bluez
     bluez-tools
     cachix
